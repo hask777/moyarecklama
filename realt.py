@@ -2,6 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 import html5lib
 import json
+import pandas as pd
 
 url = "https://moyareklama.by/Гомель/новостройки/"
 req = requests.get(url)
@@ -45,3 +46,5 @@ for item in items:
 with open('json/new.json', 'w', encoding='utf-8') as f:
     json.dump(app_arr, f, ensure_ascii = False, indent =4, sort_keys=False)
 
+df = pd.read_json('json/new.json')
+df.to_csv('csv/new.csv')

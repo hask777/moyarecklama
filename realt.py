@@ -21,14 +21,12 @@ for item in items:
     complex_link = main_url + item.find_all('a')[0].get("href")
     address = item.find('div', class_='adv-list-content').text
     status = item.find('div', class_='adv-list-content text').text
-    link3 = main_url + item.find_all('a')[3].get('href')
-        
+
+    links = item.find_all('a')
+
     lines = item.find_all('div', class_="apartment_line")
-    # for l in lines:
-    #     line = l.text # line = l.find_all('div', class_='apartment_line')
-
-    #     print(line)
-
+    prices = item.find_all('div', class_="apartment_price")
+ 
     developer = item.find('div', class_='adv-list-content developer').text
     
     app_dict = {
@@ -36,9 +34,9 @@ for item in items:
         'complex': complex_link,
         'address': address,
         'status': status,
-        'complex_link': link3,
-        'line': [l.text for l in lines],
-        # 'price': price.text,
+        'links': [main_url + link.get('href') for link in links],
+        'lines': [l.text for l in lines],
+        'prices': [p.text for p in prices],
         'developer': developer
     }
 

@@ -8,15 +8,15 @@ import os.path
 url = "https://moyareklama.by/Гомель/новостройки/"
 data = requests.get(url)
 
-path = os.path.exists('html/realt/realt.html')
+path = os.path.exists('html/realt.html')
 
 if path != True:
-    with open("html/realt/realt.html", "w", encoding="utf-8") as f:
+    with open("html/realt.html", "w", encoding="utf-8") as f:
         f.write(data.text)
 else:
     print("this file allready exists!")
 
-with open("html/realt/realt.html", 'r', encoding='utf-8') as f:
+with open("html/realt.html", 'r', encoding='utf-8') as f:
     page = f.read()
 # print(data)
 

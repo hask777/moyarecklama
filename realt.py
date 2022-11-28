@@ -18,27 +18,30 @@ app_dict = {}
 app_arr = []
 
 for item in items:
-    title = item.find('div', class_="adv-list-content").text
-    complex_link = main_url + item.find_all('a')[0].get("href")
+    item_id = item.get('id')
+    title = item.find('div', class_="adv-list-title").text
+    # title = title.replace(" ", "")
     address = item.find('div', class_='adv-list-content').text
     status = item.find('div', class_='adv-list-content text').text
+    # status = status.replace(" ", "")
 
     links = item.find_all('a')
-
-    lines = item.find_all('div', class_="apartment_line")
-    prices = item.find_all('div', class_="apartment_price")
- 
+    lines = item.find_all('div', class_='apartment_line')
+    prices = item.find_all('div', class_='apartment_price')
     developer = item.find('div', class_='adv-list-content developer').text
-    
+    image = item.find('div', class_="image").get('style')
+    image = image.replace('background-image: url', '').replace('\'', '').replace('(', '').replace(')', '')
+    print(image)
     app_dict = {
+        'id': item_id,
         'title': title,
-        'complex': complex_link,
         'address': address,
         'status': status,
-        'links': [main_url + link.get('href') for link in links],
+        'links': [main_url + l.get('href') for l in links],
         'lines': [l.text for l in lines],
         'prices': [p.text for p in prices],
-        'developer': developer
+        'developer': developer,
+        'image': image
     }
 
     app_arr.append(app_dict)

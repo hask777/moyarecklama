@@ -1,21 +1,18 @@
 [
     {
-        "title": "Советский р-н, ул. Пенязькова, ул. Денисенко",
-        "complex": "https://www.moyareklama.by//residential_complex/1000019/",
+        "id": "1000019",
+        "title": "\n            Микрорайон \"Шведская горка\" № 59\n                    ",
         "address": "Советский р-н, ул. Пенязькова, ул. Денисенко",
         "status": "\n                            Срок сдачи: 4 квартал 2018 г.                    ",
         "links": [
             "https://www.moyareklama.by//residential_complex/1000019/",
             "https://www.moyareklama.by//residential_complex/1000019/",
             "https://www.moyareklama.by//residential_complex/1000019/",
-            "https://www.moyareklama.by//search/Гомель/d640156df844d6dc7972bdae3d01fdcb",
             "https://www.moyareklama.by//search/Гомель/a5cd1cb24d9deefa003160e2deeaaaab",
             "https://www.moyareklama.by//search/Гомель/fd3069a2bdbb5d20ec76e423181f6be9",
             "https://www.moyareklama.by//search/Гомель/64f25c2d847a40cb6a42d7eac4c4d88c"
         ],
         "lines": [
-            "Студии от 36,9 м2 (1)",
-            "от 66 000 р.",
             "1-ком. от 36,8 м2 (4)",
             "от 64 000 р.",
             "2-ком. от 53 м2 (3)",
@@ -24,16 +21,45 @@
             "от 119 885 р."
         ],
         "prices": [
-            "от 66 000 р.",
             "от 64 000 р.",
             "от 92 547 р.",
             "от 119 885 р."
         ],
-        "developer": "Застройщик Гомельский ДСК"
+        "developer": "Застройщик Гомельский ДСК",
+        "image": "https://media1.moyareklama.by/i/p/medium/201811/20181108113906_d00040966d9e164603ab08e6ced0bdfd.jpg"
     },
     {
-        "title": "Железнодорожный р-н, ул. Докутович",
-        "complex": "https://www.moyareklama.by//residential_complex/1000049/",
+        "id": "1000033",
+        "title": "\n            ЖК Многоквартирная новостройка\n                    ",
+        "address": "Центральный р-н, ул. Волотовская, 11",
+        "status": "\n                            Сдан\n                    ",
+        "links": [
+            "https://www.moyareklama.by//residential_complex/1000033/",
+            "https://www.moyareklama.by//residential_complex/1000033/",
+            "https://www.moyareklama.by//residential_complex/1000033/",
+            "https://www.moyareklama.by//search/Гомель/7f18ad637adb54d0e763e7f6a339719b",
+            "https://www.moyareklama.by//search/Гомель/614ec19e76b6dee42e5dfc85cafb34fe",
+            "https://www.moyareklama.by//search/Гомель/2ef1b9e17ab8c482bee9ae0bb2e43cb3"
+        ],
+        "lines": [
+            "2-ком. от 65,9 м2 (3)",
+            "от 145 000 р.",
+            "3-ком. от 100 м2 (3)",
+            "от 193 630 р.",
+            "6-ком. от 156 м2 (1)",
+            "от 372 723 р."
+        ],
+        "prices": [
+            "от 145 000 р.",
+            "от 193 630 р.",
+            "от 372 723 р."
+        ],
+        "developer": "Застройщик ООО \"Электропром\"",
+        "image": "https://media1.moyareklama.by/i/p/medium/202209/20220929131832_728c0f057fd61d7b8d01b1c9b4d28a13.jpg"
+    },
+    {
+        "id": "1000049",
+        "title": "\n            ЖК Многоквартирная новостройка\n                    ",
         "address": "Железнодорожный р-н, ул. Докутович",
         "status": "\n                            Срок сдачи: 4 квартал 2019 г.                    ",
         "links": [
@@ -55,11 +81,12 @@
             "от 74 814 р.",
             "от 126 084 р."
         ],
-        "developer": "Застройщик УКС г. Гомеля"
+        "developer": "Застройщик УКС г. Гомеля",
+        "image": "https://media1.moyareklama.by/i/p/medium/201908/20190802165910_c37c0a09a78b035647a4992a36d62c9b.jpg"
     },
     {
-        "title": "Центральный р-н, ул. Мазурова, Бородина, Головацкого",
-        "complex": "https://www.moyareklama.by//residential_complex/1000027/",
+        "id": "1000027",
+        "title": "\n            Микрорайон «Приозёрный» №19\n                    ",
         "address": "Центральный р-н, ул. Мазурова, Бородина, Головацкого",
         "status": "\n                            Срок сдачи: 4 квартал 2019 г.                    ",
         "links": [
@@ -79,35 +106,12 @@
             "от 74 600 р.",
             "от 93 000 р."
         ],
-        "developer": "Застройщик УКС Гомельской области, ЖилСтройПроект ООО"
+        "developer": "Застройщик УКС Гомельской области, ЖилСтройПроект ООО",
+        "image": "https://media1.moyareklama.by/i/p/medium/201811/20181109111228_96c463ffa257ca617b04331aba84f089.jpg"
     },
     {
-        "title": "Центральный р-н, ул. Волотовская, 11",
-        "complex": "https://www.moyareklama.by//residential_complex/1000033/",
-        "address": "Центральный р-н, ул. Волотовская, 11",
-        "status": "\n                            Сдан\n                    ",
-        "links": [
-            "https://www.moyareklama.by//residential_complex/1000033/",
-            "https://www.moyareklama.by//residential_complex/1000033/",
-            "https://www.moyareklama.by//residential_complex/1000033/",
-            "https://www.moyareklama.by//search/Гомель/614ec19e76b6dee42e5dfc85cafb34fe",
-            "https://www.moyareklama.by//search/Гомель/2ef1b9e17ab8c482bee9ae0bb2e43cb3"
-        ],
-        "lines": [
-            "3-ком. от 100 м2 (2)",
-            "от 193 630 р.",
-            "6-ком. от 156 м2 (1)",
-            "от 372 723 р."
-        ],
-        "prices": [
-            "от 193 630 р.",
-            "от 372 723 р."
-        ],
-        "developer": "Застройщик ООО \"Электропром\""
-    },
-    {
-        "title": "Советский р-н, ",
-        "complex": "https://www.moyareklama.by//residential_complex/1000031/",
+        "id": "1000031",
+        "title": "\n            ЖК по улице Барыкина\n                    ",
         "address": "Советский р-н, ",
         "status": "\n                            Сдан\n                    ",
         "links": [
@@ -131,11 +135,12 @@
             "от 99 600 р.",
             "от 112 000 р."
         ],
-        "developer": "Застройщик Гомельский ДСК"
+        "developer": "Застройщик Гомельский ДСК",
+        "image": "https://media1.moyareklama.by/i/p/medium/201811/20181113130020_86d89a7941aa8d2700f03f35babbd612.jpg"
     },
     {
-        "title": "Центральный р-н, ул. Чечерская",
-        "complex": "https://www.moyareklama.by//residential_complex/1000024/",
+        "id": "1000024",
+        "title": "\n            Микрорайон \"Кленковский\" № 21\n                    ",
         "address": "Центральный р-н, ул. Чечерская",
         "status": "\n                            Срок сдачи: 4 квартал 2018 г.                    ",
         "links": [
@@ -151,11 +156,12 @@
         "prices": [
             "от 145 000 р."
         ],
-        "developer": "Застройщик УКС города Гомеля"
+        "developer": "Застройщик УКС города Гомеля",
+        "image": "https://media1.moyareklama.by/i/p/medium/201811/20181114110801_737bf3605bbc053e454cc6ef9c58e0a7.jpg"
     },
     {
-        "title": "Центральный р-н, ул. Мазурова, 59В",
-        "complex": "https://www.moyareklama.by//residential_complex/1000028/",
+        "id": "1000028",
+        "title": "\n            Микрорайон №18\n                    ",
         "address": "Центральный р-н, ул. Мазурова, 59В",
         "status": "\n                            Срок сдачи: 4 квартал 2021 г.                    ",
         "links": [
@@ -175,11 +181,12 @@
             "от 88 000 р.",
             "от 131 000 р."
         ],
-        "developer": "Застройщик ОАО \"Гомельский ДСК\""
+        "developer": "Застройщик ОАО \"Гомельский ДСК\"",
+        "image": "https://media1.moyareklama.by/i/p/medium/202010/20201008113809_882c8282de504ae032439fb03381c52d.jpg"
     },
     {
-        "title": "Гомельский р-н, ул. Севруковская",
-        "complex": "https://www.moyareklama.by//residential_complex/1000029/",
+        "id": "1000029",
+        "title": "\n            Коттеджный поселок \"Ченки\"\n                    ",
         "address": "Гомельский р-н, ул. Севруковская",
         "status": "\n                            Сдан\n                    ",
         "links": [
@@ -195,11 +202,12 @@
         "prices": [
             "от 95 000 р."
         ],
-        "developer": "Застройщик ОАО \"Строительный трест №14\""
+        "developer": "Застройщик ОАО \"Строительный трест №14\"",
+        "image": "https://media1.moyareklama.by/i/p/medium/201902/20190208130030_473343732b823277efa90229d9bce0dc.jpg"
     },
     {
-        "title": "Новобелицкий р-н, в квартале улиц Ст. Разина - Войкова",
-        "complex": "https://www.moyareklama.by//residential_complex/1000015/",
+        "id": "1000015",
+        "title": "\n            ЖК 10-этажная новостройка\n                    ",
         "address": "Новобелицкий р-н, в квартале улиц Ст. Разина - Войкова",
         "status": "\n                            Срок сдачи: 3 квартал 2018 г.                    ",
         "links": [
@@ -215,11 +223,12 @@
         "prices": [
             "от 130 000 р."
         ],
-        "developer": "Застройщик УКС города Гомеля"
+        "developer": "Застройщик УКС города Гомеля",
+        "image": "https://media1.moyareklama.by/i/p/medium/201805/20180504092318_35057b12b2f3e2ffcea58f95f79fc692.jpg"
     },
     {
-        "title": "Новобелицкий р-н, ул. Дубравная, Оськина, Рябиновая",
-        "complex": "https://www.moyareklama.by//residential_complex/1000022/",
+        "id": "1000022",
+        "title": "\n            Микрорайон «Южный» № 104\n                    ",
         "address": "Новобелицкий р-н, ул. Дубравная, Оськина, Рябиновая",
         "status": "\n                            Срок сдачи: 4 квартал 2019 г.                    ",
         "links": [
@@ -235,11 +244,12 @@
         "prices": [
             "от 90 300 р."
         ],
-        "developer": "Застройщик Гомельский ДСК"
+        "developer": "Застройщик Гомельский ДСК",
+        "image": "https://media1.moyareklama.by/i/p/medium/201811/20181108123443_44ebb9ee8fe2c7885378e1c6f5e535de.jpg"
     },
     {
-        "title": "Центральный р-н, ул. Кленковская",
-        "complex": "https://www.moyareklama.by//residential_complex/1000039/",
+        "id": "1000039",
+        "title": "\n            ЖК Кленовый квартал\n                    ",
         "address": "Центральный р-н, ул. Кленковская",
         "status": "\n                            Срок сдачи: 3 квартал 2022 г.                    ",
         "links": [
@@ -252,11 +262,12 @@
             "4-ком. от 120 м2 (1)"
         ],
         "prices": [],
-        "developer": "Застройщик ООО \"УКС-Дронго\""
+        "developer": "Застройщик ООО \"УКС-Дронго\"",
+        "image": "https://media1.moyareklama.by/i/p/medium/202102/20210219162756_5cf1550ccbd41c33d46a6107a6a73101.jpg"
     },
     {
-        "title": "Советский р-н, позиция №1 по генплану",
-        "complex": "https://www.moyareklama.by//residential_complex/1000057/",
+        "id": "1000057",
+        "title": "\n            ЖК Многоквартирный жилой дом\n                    ",
         "address": "Советский р-н, позиция №1 по генплану",
         "status": "\n                            Срок сдачи: 4 квартал 2022 г.                    ",
         "links": [
@@ -272,11 +283,12 @@
         "prices": [
             "от 133 000 р."
         ],
-        "developer": "Застройщик УКС Гомельского района"
+        "developer": "Застройщик УКС Гомельского района",
+        "image": "https://media1.moyareklama.by/i/p/medium/202201/20220128124120_6336683df61514898bd10f2b83f73bd1.jpg"
     },
     {
-        "title": "Центральный р-н, ул. Бородина, 6а",
-        "complex": "https://www.moyareklama.by//residential_complex/1000001/",
+        "id": "1000001",
+        "title": "\n            ЖК Новостройка \"На берегу озера\"\n                    ",
         "address": "Центральный р-н, ул. Бородина, 6а",
         "status": "\n                            Сдан\n                    ",
         "links": [
@@ -292,11 +304,12 @@
         "prices": [
             "от 159 000 р."
         ],
-        "developer": "Застройщик ООО Проектное бюро Жилстройпроект"
+        "developer": "Застройщик ООО Проектное бюро Жилстройпроект",
+        "image": "https://media1.moyareklama.by/i/p/medium/201903/20190318170739_c39ea91858f95696a41539c4f44015da.jpg"
     },
     {
-        "title": "Центральный р-н, ул. Сожская, 5",
-        "complex": "https://www.moyareklama.by//residential_complex/1000014/",
+        "id": "1000014",
+        "title": "\n            ЖК Новостройка \"Парус\"\n                    ",
         "address": "Центральный р-н, ул. Сожская, 5",
         "status": "\n                            Сдан\n                    ",
         "links": [
@@ -312,11 +325,12 @@
         "prices": [
             "от 128 000 р."
         ],
-        "developer": "Застройщик Агростройпром"
+        "developer": "Застройщик Агростройпром",
+        "image": "https://media1.moyareklama.by/i/p/medium/201708/20170804164537_055827a39668dbde6538d1f663aad89e.jpg"
     },
     {
-        "title": "Центральный р-н, ул. Советская, 144",
-        "complex": "https://www.moyareklama.by//residential_complex/1000013/",
+        "id": "1000013",
+        "title": "\n            ЖК Элитные квартиры в новостройке\n                    ",
         "address": "Центральный р-н, ул. Советская, 144",
         "status": "\n                            Срок сдачи: 4 квартал 2023 г.                    ",
         "links": [
@@ -332,6 +346,7 @@
         "prices": [
             "от 150 000 р."
         ],
-        "developer": "Застройщик ЧУП \"Чижик-Инвест\""
+        "developer": "Застройщик ЧУП \"Чижик-Инвест\"",
+        "image": "https://media1.moyareklama.by/i/p/medium/202210/20221003143559_6434914a9300d3143df71f1a2b2e9da7.jpg"
     }
 ]

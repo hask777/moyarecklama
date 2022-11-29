@@ -9,8 +9,12 @@ import time
 
 # functions
 from flats.flats import get_appartments
+from houses.houses import get_houses
 
 if __name__ == '__main__':
     while True:
+
         get_appartments()
+        get_houses()
+        
         time.sleep(10)

@@ -7,7 +7,7 @@ import pandas as pd
 import os.path
 import time
 
-def get_houses():
+def get_rooms():
 
     app_arr = []
     app_dict = {}
@@ -16,8 +16,8 @@ def get_houses():
 
     main_url = 'https://www.moyareklama.by'
 
-    for i in range(1,66):
-        url = f"https://moyareklama.by/Гомель/дома_продажа/все/8/{i}/"
+    for i in range(1,3):
+        url = f"https://moyareklama.by/Гомель/комнаты_продажа/все/8/{i}/"
         data = requests.get(url)
         print(url)
 
@@ -63,17 +63,18 @@ def get_houses():
 
         print(len(app_arr))
 
-    with open(f'files/json/houses.json', 'w', encoding='utf-8') as f:
+    with open(f'files/json/rooms.json', 'w', encoding='utf-8') as f:
             json.dump(app_arr, f, ensure_ascii = False, indent =4, sort_keys=False)
 
     print("JSON File write!")
 
-    df = pd.read_json('files/json/houses.json')
-    df.to_csv('files/csv/houses.csv')
+    df = pd.read_json('files/json/rooms.json')
+    df.to_csv('files/csv/rooms.csv')
 
     print('CSV File write!')
 
     # df = pd.DataFrame(app_arr)
-    # df.to_csv('files/csv/houses.csv')
+    # df.to_csv('files/csv/rooms.csv')
 
-get_houses()
+get_rooms() 
+            

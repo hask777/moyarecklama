@@ -74,10 +74,6 @@ def get_appartments():
     print('CSV File write!')
 
     # df = pd.DataFrame(app_arr)
-    # df.to_csv('files/csv/all.csv')
-
-# if __name__ == '__main__':
-#     while True:
-#         get_appartments()
-#         time.sleep(10)          
-            
+    # df.to_csv('files/csv/flats.csv')
+       
+get_appartments()         

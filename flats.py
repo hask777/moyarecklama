@@ -18,7 +18,7 @@ data = requests.get(url)
 soup = BeautifulSoup(data.text, 'lxml')
 # print(soup.prettify)
 
-items = soup.find_all('div', class_="one_advert_list")
+items = soup.select('div', class_="one_advert_list")
 # print(len(items))
 app_dict = {}
 app_arr = []
@@ -26,8 +26,11 @@ app_arr = []
 num = 0
 
 for item in items:
-    num = num + 1
-    item_id = item.find('div', class_="title").find('a').get('href').replace('/single/ad/', '')
+    # num = num + 1
+    try:
+        item_id = item.find('div', class_="title").find('a').get('href').replace('/single/ad/', '')
+    except:
+        continue
     link = item.find('div', class_="title").find('a').get('href')
     title = item.find('div', class_="title").text
     address = item.find('div', class_="address").text
@@ -39,7 +42,7 @@ for item in items:
     company_name = item.find('div', class_="company").text
     
     app_dict ={
-        'number': num,
+        # 'number': num,
         'id': item_id,
         'link': link,
         'title': title,

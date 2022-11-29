@@ -34,24 +34,29 @@ for i in range(1,66):
         title = item.find('div', class_="title").text
         address = item.find('div', class_="address").text
         price = item.find('div', class_="price_block").text
-        # try:
-        #     company_link = item.find('div', class_="company").find('a').get('href')
-        # except:
-        #     continue
-        # company_name = item.find('div', class_="company").text
+        try:
+            company_link = item.find('a', class_="realty_link")
+            if company_link:
+                company_link = item.find('a', class_="realty_link").get('href')
+            else:
+                company_link = "None"
+        except:
+            continue
+
+        company_name = item.find('div', class_="company").text
         
         app_dict ={
             'number': num,
             'id': item_id,
             'link': link,
-            'title': title,
+            'title': title.strip(),
             'address': address,
-            'price': price,
-            # 'company_link': company_link,
-            # 'company_name': company_name
+            'price': price.strip(),
+            'company_link': company_link,
+            'company_name': company_name.strip()
         }
 
-        # app_arr.append([link, item_id, title, address, price])
+        # app_arr.append([link, item_id, title, address, price, company_name, company_link])
         app_arr.append(app_dict)
 
     print(len(app_arr))
@@ -59,9 +64,12 @@ for i in range(1,66):
 with open(f'json/all.json', 'w', encoding='utf-8') as f:
         json.dump(app_arr, f, ensure_ascii = False, indent =4, sort_keys=False)
 
-df = pd.DataFrame(app_arr)
-df.to_csv('csv/all.csv')
-# print(app_arr)
+# df = pd.DataFrame(app_arr)
+# df.to_csv('csv/all.csv')
+
+# print(f'''
+# some:  {app_arr}
+# ''')
 
 
         

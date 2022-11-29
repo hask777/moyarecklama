@@ -1,26 +1,27 @@
 import requests
 from bs4 import BeautifulSoup
-import html5lib
+import lxml
 import json
 import pandas as pd
 import os.path
 
+
 url = "https://moyareklama.by/Гомель/новостройки/"
 data = requests.get(url)
 
-path = os.path.exists('html/realt.html')
+path = os.path.exists('files/html/realt.html')
 
 if path != True:
-    with open("html/realt.html", "w", encoding="utf-8") as f:
+    with open("files/html/realt.html", "w", encoding="utf-8") as f:
         f.write(data.text)
 else:
     print("this file allready exists!")
 
-with open("html/realt.html", 'r', encoding='utf-8') as f:
+with open("files/html/realt.html", 'r', encoding='utf-8') as f:
     page = f.read()
 # print(data)
 
-soup = BeautifulSoup(page, 'html5lib')
+soup = BeautifulSoup(page, 'lxml')
 items = soup.find_all('div', class_="one_complex_list")
 
 main_url = 'https://www.moyareklama.by/'
@@ -42,7 +43,9 @@ for item in items:
     developer = item.find('div', class_='adv-list-content developer').text
     image = item.find('div', class_="image").get('style')
     image = image.replace('background-image: url', '').replace('\'', '').replace('(', '').replace(')', '')
+    
     print(image)
+
     app_dict = {
         'id': item_id,
         'title': title,
@@ -57,8 +60,8 @@ for item in items:
 
     app_arr.append(app_dict)
 
-with open('json/new.json', 'w', encoding='utf-8') as f:
+with open('files/json/new.json', 'w', encoding='utf-8') as f:
     json.dump(app_arr, f, ensure_ascii = False, indent =4, sort_keys=False)
 
-df = pd.read_json('json/new.json')
-df.to_csv('csv/new.csv')
+df = pd.read_json('files/json/new.json')
+df.to_csv('files/csv/new.csv')

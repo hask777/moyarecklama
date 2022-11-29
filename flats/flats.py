@@ -12,7 +12,7 @@ def get_appartments():
     app_arr = []
     app_dict = {}
 
-    headers = {"user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"}
+    # headers = {"user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"}
 
     main_url = 'https://www.moyareklama.by'
 
@@ -58,20 +58,23 @@ def get_appartments():
                     # 'count': counter(count)
             }
 
-            app_arr.append([link, item_id, title, address, price, company_name, company_link])
-            # app_arr.append(app_dict)
+            # app_arr.append([link, item_id, title, address, price, company_name, company_link])
+            app_arr.append(app_dict)
 
         print(len(app_arr))
 
-    # with open(f'json/all.json', 'w', encoding='utf-8') as f:
-    #         json.dump(app_arr, f, ensure_ascii = False, indent =4, sort_keys=False)
+    with open(f'files/json/flats.json', 'w', encoding='utf-8') as f:
+            json.dump(app_arr, f, ensure_ascii = False, indent =4, sort_keys=False)
 
-    df = pd.DataFrame(app_arr)
-    df.to_csv('csv/all.csv')
+    print("JSON File write!")
 
-    # print(f'''
-    # some:  {app_arr}
-    # ''')
+    df = pd.read_json('files/json/flats.json')
+    df.to_csv('files/csv/flats.csv')
+
+    print('CSV File write!')
+
+    # df = pd.DataFrame(app_arr)
+    # df.to_csv('files/csv/all.csv')
 
 # if __name__ == '__main__':
 #     while True:

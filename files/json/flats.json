@@ -1,206 +1,36 @@
 [
     {
         "number": 1,
-        "id": "210802047",
-        "link": "https://www.moyareklama.by/single/ad/210802047",
-        "title": "2-ком. квартира 46,7 м², 1/9 эт.",
-        "address": "Центральный р-н, ул. Телегина, д. 19",
-        "price": "72 800 р. 1 558,89  р./м²",
-        "company_link": "/single_spec.php?id=209978187",
-        "company_name": "Агентство ООО \"Твой риэлтер\""
+        "id": "210863628",
+        "link": "https://www.moyareklama.by/single/ad/210863628",
+        "title": "1-ком. квартира 38 м², 1/3 эт.",
+        "address": "Гомельский р-н, аг. Урицкое, ул. Парковая, д. 7",
+        "price": "51 000 р. 1 342,11  р./м²",
+        "company_link": "/single_spec.php?id=207501945",
+        "company_name": "Агентство \"Гид по недвижимости\""
     },
     {
         "number": 2,
-        "id": "210808867",
-        "link": "https://www.moyareklama.by/single/ad/210808867",
-        "title": "3-ком. квартира 71,9 м², 3/5 эт.",
-        "address": "Центральный р-н, ул. Трудовая, д. 5А",
-        "price": "129 600 р. 1 802,50  р./м²",
-        "company_link": "/single_spec.php?id=210652159",
-        "company_name": "Агентство ООО \"Центр недвижимости \"Пакодан Регион\""
-    },
-    {
-        "number": 3,
-        "id": "210808485",
-        "link": "https://www.moyareklama.by/single/ad/210808485",
-        "title": "1-ком. квартира 28,1 м², 4/4 эт.",
-        "address": "Центральный р-н, ул. Трудовая, д. 5 (р-н ост. \"Площадь Ленина\")",
-        "price": "",
-        "company_link": "/single_spec.php?id=210280869",
-        "company_name": "Агентство ООО \"Ваше агентство недвижимости\""
-    },
-    {
-        "number": 4,
-        "id": "210808840",
-        "link": "https://www.moyareklama.by/single/ad/210808840",
-        "title": "2-ком. квартира 47 м², 5/9 эт.",
-        "address": "Железнодорожный р-н, ул. Герое Подпольщиков, д. 21",
-        "price": "89 170 р. 1 896,83  р./м²",
-        "company_link": "/single_spec.php?id=210652159",
-        "company_name": "Агентство ООО \"Центр недвижимости \"ПАКОДАН Регион\""
-    },
-    {
-        "number": 5,
-        "id": "210813331",
-        "link": "https://www.moyareklama.by/single/ad/210813331",
-        "title": "1-ком. квартира 41,5 м², 4/4 эт.",
-        "address": "Центральный р-н, пр-т Ленина, д. 45 (ост. \"Карповича\")",
-        "price": "",
-        "company_link": "/single_spec.php?id=210280869",
-        "company_name": "Агентство ООО \"Ваше агентство недвижимоси\""
-    },
-    {
-        "number": 6,
-        "id": "210813524",
-        "link": "https://www.moyareklama.by/single/ad/210813524",
-        "title": "1-ком. квартира 38,6 м², 7/12 эт.",
-        "address": "Железнодорожный р-н, ул. Советская, д. 163",
-        "price": "43 632 р. 1 130,36  р./м²",
-        "company_link": "/single_spec.php?id=209876601",
-        "company_name": "Агентство ОДО \"Юриэлт\""
-    },
-    {
-        "number": 7,
-        "id": "210813687",
-        "link": "https://www.moyareklama.by/single/ad/210813687",
-        "title": "2-ком. квартира 49,3 м², 4/5 эт.",
-        "address": "Советский р-н, ул. Богдана Хмельницкого, д. 85",
-        "price": "67 480 р. 1 368,76  р./м²",
-        "company_link": "/single_spec.php?id=208314513",
-        "company_name": "Агентство ООО \"Капитал недвижимости\""
-    },
-    {
-        "number": 8,
-        "id": "210814143",
-        "link": "https://www.moyareklama.by/single/ad/210814143",
-        "title": "3-ком. квартира 63,3 м², 3/3 эт.",
-        "address": "Центральный р-н, ул. Гагарина, д. 32",
-        "price": "",
-        "company_link": "/single_spec.php?id=210652159",
-        "company_name": "Агентство ООО \"Центр недвижимости \"Пакодан Регион\""
-    },
-    {
-        "number": 9,
-        "id": "210815560",
-        "link": "https://www.moyareklama.by/single/ad/210815560",
-        "title": "2-ком. квартира 42,1 м², 5/5 эт.",
-        "address": "Железнодорожный р-н, ул. Советская, д. 121",
-        "price": "62 660 р. 1 487,65  р./м²",
-        "company_link": "/single_spec.php?id=208314513",
-        "company_name": "Агентство ООО \"Капитал недвижимости\""
-    },
-    {
-        "number": 10,
-        "id": "210819544",
-        "link": "https://www.moyareklama.by/single/ad/210819544",
-        "title": "2-ком. квартира 46,7 м², 7/9 эт.",
-        "address": "Советский р-н, ул. Космическая, д. 9",
-        "price": "65 473 р. 1 401,99  р./м²",
-        "company_link": "/single_spec.php?id=209876601",
-        "company_name": "Агентство ОДО \"Юриэлт\""
-    },
-    {
-        "number": 11,
-        "id": "210825867",
-        "link": "https://www.moyareklama.by/single/ad/210825867",
-        "title": "2-ком. квартира 53,2 м², 3/5 эт.",
-        "address": "Центральный р-н, ул. Полесская-Кирова-Докутовича",
-        "price": "95 978,41 р. 1 802,75  р./м²",
-        "company_link": "None",
-        "company_name": "Застройщик Государственное предприятие \"УКС г.Гомеля\""
-    },
-    {
-        "number": 12,
-        "id": "210825872",
-        "link": "https://www.moyareklama.by/single/ad/210825872",
-        "title": "3-ком. квартира 69,9 м², 3/5 эт.",
-        "address": "Центральный р-н, ул. Полесская-Кирова-Докутовича",
-        "price": "126 084,34 р. 1 802,75  р./м²",
-        "company_link": "None",
-        "company_name": "Застройщик Государственное предприятие \"УКС г.Гомеля\""
-    },
-    {
-        "number": 13,
-        "id": "210820326",
-        "link": "https://www.moyareklama.by/single/ad/210820326",
-        "title": "2-ком. квартира 42 м², 5/5 эт.",
-        "address": "Новобелицкий р-н, ул. Герцена, д. 1",
-        "price": "61 455 р. 1 463,21  р./м²",
-        "company_link": "/single_spec.php?id=208314513",
-        "company_name": "Агентство ООО \"Капитал недвижимости\""
-    },
-    {
-        "number": 14,
-        "id": "210825841",
-        "link": "https://www.moyareklama.by/single/ad/210825841",
-        "title": "1-ком. квартира 41,5 м², 3/5 эт.",
-        "address": "Центральный р-н, ул. Докутович",
-        "price": "74 814,12 р. 1 802,75  р./м²",
-        "company_link": "None",
-        "company_name": "Агентство \"Государственное предприятие \"УКС г.Гомеля\""
-    },
-    {
-        "number": 15,
-        "id": "210827223",
-        "link": "https://www.moyareklama.by/single/ad/210827223",
-        "title": "2-ком. квартира 46,5 м², 5/9 эт.",
-        "address": "Железнодорожный р-н, ул. Огоренко",
-        "price": "72 453 р. 1 557,46  р./м²",
-        "company_link": "None",
-        "company_name": "Агентство ЧУП \"Агентство недвижимости \"Новые адреса\""
-    },
-    {
-        "number": 16,
-        "id": "210829883",
-        "link": "https://www.moyareklama.by/single/ad/210829883",
-        "title": "4-ком. квартира 79,6 м², 7/14 эт.",
-        "address": "Железнодорожный р-н, ул. Кожара, д. 6",
-        "price": "126 600 р. 1 590,45  р./м²",
-        "company_link": "/single_spec.php?id=210652159",
-        "company_name": "Агентство ООО \"Центр недвижимости \"Пакодан Регион\""
-    },
-    {
-        "number": 17,
-        "id": "210842467",
-        "link": "https://www.moyareklama.by/single/ad/210842467",
-        "title": "3-ком. квартира 63,6 м², 5/5 эт.",
-        "address": "Советский р-н, ул. Клермон-Ферран, д. 14",
-        "price": "105 800 р. 1 663,52  р./м²",
-        "company_link": "/single_spec.php?id=208314513",
-        "company_name": "Агентство ООО \"Капитал недвижимости\""
-    },
-    {
-        "number": 18,
-        "id": "210831367",
-        "link": "https://www.moyareklama.by/single/ad/210831367",
-        "title": "4-ком. квартира 80,9 м², 4/9 эт.",
-        "address": "Советский р-н, ул. Б.Хмельницкого, д. 126 (5-й микрорайон)",
-        "price": "115 000 р. 1 421,51  р./м²",
-        "company_link": "/single_spec.php?id=200856033",
-        "company_name": "Агентство ООО \"Лига права-Недвижимость\""
-    },
-    {
-        "number": 19,
-        "id": "210837781",
-        "link": "https://www.moyareklama.by/single/ad/210837781",
-        "title": "1-ком. квартира 29 м², 3/9 эт.",
-        "address": "Железнодорожный р-н, пр-т Космонавтов, д. 94",
-        "price": "39 300 р. 1 357,51  р./м²",
-        "company_link": "/single_spec.php?id=208314513",
-        "company_name": "Агентство ООО \"Капитал недвижимости\""
-    },
-    {
-        "number": 20,
-        "id": "210843778",
-        "link": "https://www.moyareklama.by/single/ad/210843778",
-        "title": "3-ком. квартира 65,2 м², 2/9 эт.",
-        "address": "Центральный р-н, ул. Мазурова, д. 14",
-        "price": "125 000 р. 1 918,65  р./м²",
+        "id": "210862179",
+        "link": "https://www.moyareklama.by/single/ad/210862179",
+        "title": "3-ком. квартира 79,9 м², 2/10 эт.",
+        "address": "Центральный р-н, ул. Тельмана, д. 3 (Новый универмаг)",
+        "price": "237 500 р. 2 972,47  р./м²",
         "company_link": "/single_spec.php?id=207501945",
         "company_name": "Агентство ООО \"Гид по недвижимости\""
     },
     {
-        "number": 1,
+        "number": 3,
+        "id": "210862289",
+        "link": "https://www.moyareklama.by/single/ad/210862289",
+        "title": "3-ком. квартира 112 м², 3/6 эт.",
+        "address": "Железнодорожный р-н, ул. Ленина, д. 51 (Дом Комунны)",
+        "price": "",
+        "company_link": "/single_spec.php?id=207501945",
+        "company_name": "Агентство ООО «Гид по недвижимости»"
+    },
+    {
+        "number": 4,
         "id": "210871652",
         "link": "https://www.moyareklama.by/single/ad/210871652",
         "title": "3-ком. квартира 78,9 м², 4/5 эт.",
@@ -210,7 +40,27 @@
         "company_name": "Агентство ООО \"Ваше агентство недвижимости\""
     },
     {
-        "number": 2,
+        "number": 5,
+        "id": "210866470",
+        "link": "https://www.moyareklama.by/single/ad/210866470",
+        "title": "4-ком. квартира 63,3 м², 5/5 эт.",
+        "address": "Советский р-н, ул. Б.Хмельницкого, д. 64",
+        "price": "",
+        "company_link": "/single_spec.php?id=208314513",
+        "company_name": "Агентство ООО \"Капитал недвижимости\""
+    },
+    {
+        "number": 6,
+        "id": "210868155",
+        "link": "https://www.moyareklama.by/single/ad/210868155",
+        "title": "1-ком. квартира 35,8 м², 10/16 эт.",
+        "address": "Советский р-н, ул. 60 лет СССР, д. 1 (остановка \"Жукова\")",
+        "price": "",
+        "company_link": "/single_spec.php?id=210280869",
+        "company_name": "Агентство ООО \"Ваше агентство недвижимости\""
+    },
+    {
+        "number": 7,
         "id": "210874044",
         "link": "https://www.moyareklama.by/single/ad/210874044",
         "title": "2-ком. квартира 41,4 м², 1/5 эт.",
@@ -220,7 +70,7 @@
         "company_name": "Агентство ООО \"Капитал недвижимости\""
     },
     {
-        "number": 3,
+        "number": 8,
         "id": "210881685",
         "link": "https://www.moyareklama.by/single/ad/210881685",
         "title": "2-ком. квартира 51,5 м², 2/9 эт.",
@@ -230,7 +80,7 @@
         "company_name": "Агентство ООО \"Капитал Недвижимости\""
     },
     {
-        "number": 4,
+        "number": 9,
         "id": "210880538",
         "link": "https://www.moyareklama.by/single/ad/210880538",
         "title": "2-ком. квартира 54 м², 3/5 эт.",
@@ -240,7 +90,7 @@
         "company_name": "Агентство ООО \"Ваше агентство недвижимости\""
     },
     {
-        "number": 5,
+        "number": 10,
         "id": "210880828",
         "link": "https://www.moyareklama.by/single/ad/210880828",
         "title": "1-ком. квартира 36,9 м², 11/11 эт.",
@@ -250,7 +100,7 @@
         "company_name": "Агентство ООО \"Капитал недвижимости\""
     },
     {
-        "number": 6,
+        "number": 11,
         "id": "210878073",
         "link": "https://www.moyareklama.by/single/ad/210878073",
         "title": "Студия 76,2 м², 18/18 эт.",
@@ -260,7 +110,7 @@
         "company_name": "Собственник"
     },
     {
-        "number": 7,
+        "number": 12,
         "id": "210877795",
         "link": "https://www.moyareklama.by/single/ad/210877795",
         "title": "1-ком. квартира 39,9 м², 8/12 эт.",
@@ -270,7 +120,7 @@
         "company_name": "Собственник"
     },
     {
-        "number": 8,
+        "number": 13,
         "id": "210871982",
         "link": "https://www.moyareklama.by/single/ad/210871982",
         "title": "4-ком. квартира 120 м², 1,3/3 эт.",
@@ -280,7 +130,7 @@
         "company_name": "Застройщик"
     },
     {
-        "number": 9,
+        "number": 14,
         "id": "210869691",
         "link": "https://www.moyareklama.by/single/ad/210869691",
         "title": "1-ком. квартира 33,5 м², 5/5 эт.",
@@ -290,7 +140,7 @@
         "company_name": "Собственник"
     },
     {
-        "number": 10,
+        "number": 15,
         "id": "210882336",
         "link": "https://www.moyareklama.by/single/ad/210882336",
         "title": "3-ком. квартира 77 м², 12/16 эт.",
@@ -300,7 +150,7 @@
         "company_name": "Собственник"
     },
     {
-        "number": 11,
+        "number": 16,
         "id": "210876068",
         "link": "https://www.moyareklama.by/single/ad/210876068",
         "title": "1-ком. квартира 30 м², 3/5 эт.",
@@ -310,7 +160,7 @@
         "company_name": "Собственник"
     },
     {
-        "number": 12,
+        "number": 17,
         "id": "210866127",
         "link": "https://www.moyareklama.by/single/ad/210866127",
         "title": "1-ком. квартира 30,5 м², 6/9 эт.",
@@ -320,7 +170,7 @@
         "company_name": "Собственник"
     },
     {
-        "number": 13,
+        "number": 18,
         "id": "210874748",
         "link": "https://www.moyareklama.by/single/ad/210874748",
         "title": "2-ком. квартира 48,3 м², 8/18 эт.",
@@ -330,17 +180,7 @@
         "company_name": "Собственник"
     },
     {
-        "number": 14,
-        "id": "210874749",
-        "link": "https://www.moyareklama.by/single/ad/210874749",
-        "title": "3-ком. квартира 72,8 м², 8/18 эт.",
-        "address": "Центральный р-н, ул. Бородина, д. 6",
-        "price": "165 000 р. 2 266,48  р./м²",
-        "company_link": "None",
-        "company_name": "Собственник"
-    },
-    {
-        "number": 15,
+        "number": 19,
         "id": "210876066",
         "link": "https://www.moyareklama.by/single/ad/210876066",
         "title": "1-ком. квартира 30 м², 4/5 эт.",
@@ -350,7 +190,7 @@
         "company_name": "Собственник"
     },
     {
-        "number": 16,
+        "number": 20,
         "id": "210870316",
         "link": "https://www.moyareklama.by/single/ad/210870316",
         "title": "2-ком. квартира 73,4 м², 8/18 эт.",
@@ -360,397 +200,7 @@
         "company_name": "Собственник"
     },
     {
-        "number": 17,
-        "id": "210081363",
-        "link": "https://www.moyareklama.by/single/ad/210081363",
-        "title": "1-ком. квартира 31 м², 2/4 эт.",
-        "address": "Железнодорожный р-н, ул. Кирова, д. 44",
-        "price": "64 500 р. 2 082,66  р./м²",
-        "company_link": "/single_spec.php?id=209876601",
-        "company_name": "Агентство ОДО \"Юриэлт\""
-    },
-    {
-        "number": 18,
-        "id": "210167993",
-        "link": "https://www.moyareklama.by/single/ad/210167993",
-        "title": "2-ком. квартира 74,5 м², 11/18 эт.",
-        "address": "Центральный р-н, ул. Бородина, д. 6",
-        "price": "163 432 р. 2 193,72  р./м²",
-        "company_link": "/single_spec.php?id=209978187",
-        "company_name": "Агентство ООО \"Твой риэлтер\""
-    },
-    {
-        "number": 19,
-        "id": "210354892",
-        "link": "https://www.moyareklama.by/single/ad/210354892",
-        "title": "3-ком. квартира 75,2 м², 1/10 эт.",
-        "address": "Железнодорожный р-н, ул. Докутович (ост. \"Полесская\")",
-        "price": "127 000 р. 1 688,83  р./м²",
-        "company_link": "None",
-        "company_name": "Застройщик Государственное предприятие \"УКС города Гомеля\""
-    },
-    {
-        "number": 20,
-        "id": "210495201",
-        "link": "https://www.moyareklama.by/single/ad/210495201",
-        "title": "2-ком. квартира 56,3 м², 8/10 эт.",
-        "address": "Советский р-н, ул. Денисенко, д. 66",
-        "price": "131 800 р. 2 341,03  р./м²",
-        "company_link": "/single_spec.php?id=209876601",
-        "company_name": "Агентство ОДО \"Юриэлт\""
-    },
-    {
         "number": 1,
-        "id": "210692306",
-        "link": "https://www.moyareklama.by/single/ad/210692306",
-        "title": "3-ком. квартира 69,9 м², 12/12 эт.",
-        "address": "Железнодорожный р-н, ул. Народного Ополчения, д. 4",
-        "price": "99 600 р. 1 424,89  р./м²",
-        "company_link": "/single_spec.php?id=207501945",
-        "company_name": "Агентство \"Гид по недвижимости\""
-    },
-    {
-        "number": 2,
-        "id": "210702156",
-        "link": "https://www.moyareklama.by/single/ad/210702156",
-        "title": "4-ком. квартира 73,7 м², 8/9 эт.",
-        "address": "Советский р-н, ул. З.Космодемьянской",
-        "price": "94 190 р. 1 278,89  р./м²",
-        "company_link": "None",
-        "company_name": "Агентство ЧУП \"Агентство недвижимости \"Новые адреса\""
-    },
-    {
-        "number": 3,
-        "id": "210742690",
-        "link": "https://www.moyareklama.by/single/ad/210742690",
-        "title": "3-ком. квартира 64,9 м², 2/9 эт.",
-        "address": "Железнодорожный р-н, ул. Свиридова, д. 7 (Брянский)",
-        "price": "",
-        "company_link": "/single_spec.php?id=207501945",
-        "company_name": "Агентство ООО \"Гид по недвижимости\", УНП 491323159"
-    },
-    {
-        "number": 4,
-        "id": "210719741",
-        "link": "https://www.moyareklama.by/single/ad/210719741",
-        "title": "3-ком. квартира 62 м², 3/5 эт.",
-        "address": "Центральный р-н, ул. Комсомольская, д. 5 (школа олимпийского резерва)",
-        "price": "120 540 р. 1 943,88  р./м²",
-        "company_link": "/single_spec.php?id=209978187",
-        "company_name": "Агентство ООО \"Твой риэлтер\""
-    },
-    {
-        "number": 5,
-        "id": "210727248",
-        "link": "https://www.moyareklama.by/single/ad/210727248",
-        "title": "3-ком. квартира 65 м², 3/9 эт.",
-        "address": "Центральный р-н, ул. Кожара, д. 1 (Старый аэродром)",
-        "price": "",
-        "company_link": "/single_spec.php?id=207501945",
-        "company_name": "Агентство ООО \"Гид по недвижимости\", УНП 491323159,"
-    },
-    {
-        "number": 6,
-        "id": "210758310",
-        "link": "https://www.moyareklama.by/single/ad/210758310",
-        "title": "3-ком. квартира 72,2 м², 3/11 эт.",
-        "address": "Советский р-н, ул. Г.Денисенко",
-        "price": "119 885,20 р. 1 660  р./м²",
-        "company_link": "None",
-        "company_name": "Застройщик Государственное предприятие \"УКС г.Гомеля\""
-    },
-    {
-        "number": 7,
-        "id": "210744902",
-        "link": "https://www.moyareklama.by/single/ad/210744902",
-        "title": "3-ком. квартира 77 м², 3/7 эт.",
-        "address": "Центральный р-н, б-р Газеты \"Гомельская правда\", д. 10",
-        "price": "167 895 р. 2 180,45  р./м²",
-        "company_link": "/single_spec.php?id=209876601",
-        "company_name": "Агентство ОДО \"Юриэлт\""
-    },
-    {
-        "number": 8,
-        "id": "210758168",
-        "link": "https://www.moyareklama.by/single/ad/210758168",
-        "title": "2-ком. квартира 54,6 м², 5/11 эт.",
-        "address": "Советский р-н, ул. Григория Денисенко",
-        "price": "92 547 р. 1 695  р./м²",
-        "company_link": "None",
-        "company_name": "Застройщик Государственное предприятие \"УКС г.Гомеля\""
-    },
-    {
-        "number": 9,
-        "id": "210763398",
-        "link": "https://www.moyareklama.by/single/ad/210763398",
-        "title": "3-ком. квартира 65,3 м², 1/10 эт.",
-        "address": "Советский район, ул. Сосновая, д. 2",
-        "price": "101 476,20 р. 1 554  р./м²",
-        "company_link": "/single_spec.php?id=200893805",
-        "company_name": "Агентство ОДО \"Недвижимость Линия Закона\""
-    },
-    {
-        "number": 10,
-        "id": "210766255",
-        "link": "https://www.moyareklama.by/single/ad/210766255",
-        "title": "3-ком. квартира 64,8 м², 8/9 эт.",
-        "address": "Советский р-н, ул. Черноморская, д. 9 (Черноморский рынок)",
-        "price": "83 200 р. 1 283,95  р./м²",
-        "company_link": "/single_spec.php?id=207501945",
-        "company_name": "Агентство ООО \"Гид по недвижимости\""
-    },
-    {
-        "number": 11,
-        "id": "210772025",
-        "link": "https://www.moyareklama.by/single/ad/210772025",
-        "title": "2-ком. квартира 51,5 м², 1/9 эт.",
-        "address": "Железнодорожный р-н, ул. Свиридова, д. 29",
-        "price": "114 400 р. 2 221,36  р./м²",
-        "company_link": "/single_spec.php?id=210652159",
-        "company_name": "Агентство ООО \"Центр недвижимости \"ПАКОДАН Регион\""
-    },
-    {
-        "number": 12,
-        "id": "210767558",
-        "link": "https://www.moyareklama.by/single/ad/210767558",
-        "title": "1-ком. квартира 30,1 м², 2/3 эт.",
-        "address": "Железнодорожный р-н, ул. Красноармейская, д. 5",
-        "price": "55 430 р. 1 844,59  р./м²",
-        "company_link": "/single_spec.php?id=208314513",
-        "company_name": "Агентство ООО \"Капитал недвижимости\""
-    },
-    {
-        "number": 13,
-        "id": "210772012",
-        "link": "https://www.moyareklama.by/single/ad/210772012",
-        "title": "3-ком. квартира 77,7 м², 8/9 эт.",
-        "address": "Центральный р-н, ул. Мазурова, д. 59/3",
-        "price": "193 220 р. 2 486,74  р./м²",
-        "company_link": "/single_spec.php?id=210652159",
-        "company_name": "Агентство ООО \"Центр недвижимости \"Пакодан Регион\""
-    },
-    {
-        "number": 14,
-        "id": "210774211",
-        "link": "https://www.moyareklama.by/single/ad/210774211",
-        "title": "2-ком. квартира 46,8 м², 4/9 эт.",
-        "address": "Советский р-н, ул. Гайдара, д. 14",
-        "price": "72 750 р. 1 554,49  р./м²",
-        "company_link": "/single_spec.php?id=209876601",
-        "company_name": "Агентство ОДО \"Юриэлт\""
-    },
-    {
-        "number": 15,
-        "id": "210776666",
-        "link": "https://www.moyareklama.by/single/ad/210776666",
-        "title": "1-ком. квартира 28,9 м², 8/9 эт.",
-        "address": "Советский р-н, ул. Минская, д. 10",
-        "price": "33 075 р. 1 144,46  р./м²",
-        "company_link": "/single_spec.php?id=208314513",
-        "company_name": "Агентство ООО \"Капитал Недвижимости\""
-    },
-    {
-        "number": 16,
-        "id": "210777377",
-        "link": "https://www.moyareklama.by/single/ad/210777377",
-        "title": "2-ком. квартира 58,6 м², 1/18 эт.",
-        "address": "Железнодорожный р-н, ул. Чечерская, д. 6",
-        "price": "112 500 р. 1 919,80  р./м²",
-        "company_link": "/single_spec.php?id=210567805",
-        "company_name": "Агентство ООО \"А21 Недвижимость центр услуг\""
-    },
-    {
-        "number": 17,
-        "id": "210777618",
-        "link": "https://www.moyareklama.by/single/ad/210777618",
-        "title": "2-ком. квартира 46 м², 2/5 эт.",
-        "address": "Железнодорожный р-н, пр-т Победы, д. 25А",
-        "price": "96 400 р. 2 095,65  р./м²",
-        "company_link": "/single_spec.php?id=210652159",
-        "company_name": "Агентство ООО \"Центр недвижимости \"ПАКОДАН Регион\""
-    },
-    {
-        "number": 18,
-        "id": "210783363",
-        "link": "https://www.moyareklama.by/single/ad/210783363",
-        "title": "3-ком. квартира 70 м², 11/12 эт.",
-        "address": "Центральный р-н, ул. Хатаевича, д. 59 (Мельников луг)",
-        "price": "120 960 р. 1 728  р./м²",
-        "company_link": "/single_spec.php?id=207501945",
-        "company_name": "Агентство ООО \"Гид по недвижимости\""
-    },
-    {
-        "number": 19,
-        "id": "210799447",
-        "link": "https://www.moyareklama.by/single/ad/210799447",
-        "title": "1-ком. квартира 34,9 м², 1/9 эт.",
-        "address": "Железнодорожный р-н, ул. Телегина, д. 21",
-        "price": "",
-        "company_link": "/single_spec.php?id=210280869",
-        "company_name": "Агентство ООО \"Ваше агентство недвижимости\""
-    },
-    {
-        "number": 20,
-        "id": "210802047",
-        "link": "https://www.moyareklama.by/single/ad/210802047",
-        "title": "2-ком. квартира 46,7 м², 1/9 эт.",
-        "address": "Центральный р-н, ул. Телегина, д. 19",
-        "price": "72 800 р. 1 558,89  р./м²",
-        "company_link": "/single_spec.php?id=209978187",
-        "company_name": "Агентство ООО \"Твой риэлтер\""
-    },
-    {
-        "number": 1,
-        "id": "210813524",
-        "link": "https://www.moyareklama.by/single/ad/210813524",
-        "title": "1-ком. квартира 38,6 м², 7/12 эт.",
-        "address": "Железнодорожный р-н, ул. Советская, д. 163",
-        "price": "43 632 р. 1 130,36  р./м²",
-        "company_link": "/single_spec.php?id=209876601",
-        "company_name": "Агентство ОДО \"Юриэлт\""
-    },
-    {
-        "number": 2,
-        "id": "210813687",
-        "link": "https://www.moyareklama.by/single/ad/210813687",
-        "title": "2-ком. квартира 49,3 м², 4/5 эт.",
-        "address": "Советский р-н, ул. Богдана Хмельницкого, д. 85",
-        "price": "67 480 р. 1 368,76  р./м²",
-        "company_link": "/single_spec.php?id=208314513",
-        "company_name": "Агентство ООО \"Капитал недвижимости\""
-    },
-    {
-        "number": 3,
-        "id": "210814143",
-        "link": "https://www.moyareklama.by/single/ad/210814143",
-        "title": "3-ком. квартира 63,3 м², 3/3 эт.",
-        "address": "Центральный р-н, ул. Гагарина, д. 32",
-        "price": "",
-        "company_link": "/single_spec.php?id=210652159",
-        "company_name": "Агентство ООО \"Центр недвижимости \"Пакодан Регион\""
-    },
-    {
-        "number": 4,
-        "id": "210815560",
-        "link": "https://www.moyareklama.by/single/ad/210815560",
-        "title": "2-ком. квартира 42,1 м², 5/5 эт.",
-        "address": "Железнодорожный р-н, ул. Советская, д. 121",
-        "price": "62 660 р. 1 487,65  р./м²",
-        "company_link": "/single_spec.php?id=208314513",
-        "company_name": "Агентство ООО \"Капитал недвижимости\""
-    },
-    {
-        "number": 5,
-        "id": "210819544",
-        "link": "https://www.moyareklama.by/single/ad/210819544",
-        "title": "2-ком. квартира 46,7 м², 7/9 эт.",
-        "address": "Советский р-н, ул. Космическая, д. 9",
-        "price": "65 473 р. 1 401,99  р./м²",
-        "company_link": "/single_spec.php?id=209876601",
-        "company_name": "Агентство ОДО \"Юриэлт\""
-    },
-    {
-        "number": 6,
-        "id": "210825867",
-        "link": "https://www.moyareklama.by/single/ad/210825867",
-        "title": "2-ком. квартира 53,2 м², 3/5 эт.",
-        "address": "Центральный р-н, ул. Полесская-Кирова-Докутовича",
-        "price": "95 978,41 р. 1 802,75  р./м²",
-        "company_link": "None",
-        "company_name": "Застройщик Государственное предприятие \"УКС г.Гомеля\""
-    },
-    {
-        "number": 7,
-        "id": "210825872",
-        "link": "https://www.moyareklama.by/single/ad/210825872",
-        "title": "3-ком. квартира 69,9 м², 3/5 эт.",
-        "address": "Центральный р-н, ул. Полесская-Кирова-Докутовича",
-        "price": "126 084,34 р. 1 802,75  р./м²",
-        "company_link": "None",
-        "company_name": "Застройщик Государственное предприятие \"УКС г.Гомеля\""
-    },
-    {
-        "number": 8,
-        "id": "210820326",
-        "link": "https://www.moyareklama.by/single/ad/210820326",
-        "title": "2-ком. квартира 42 м², 5/5 эт.",
-        "address": "Новобелицкий р-н, ул. Герцена, д. 1",
-        "price": "61 455 р. 1 463,21  р./м²",
-        "company_link": "/single_spec.php?id=208314513",
-        "company_name": "Агентство ООО \"Капитал недвижимости\""
-    },
-    {
-        "number": 9,
-        "id": "210825841",
-        "link": "https://www.moyareklama.by/single/ad/210825841",
-        "title": "1-ком. квартира 41,5 м², 3/5 эт.",
-        "address": "Центральный р-н, ул. Докутович",
-        "price": "74 814,12 р. 1 802,75  р./м²",
-        "company_link": "None",
-        "company_name": "Агентство \"Государственное предприятие \"УКС г.Гомеля\""
-    },
-    {
-        "number": 10,
-        "id": "210827223",
-        "link": "https://www.moyareklama.by/single/ad/210827223",
-        "title": "2-ком. квартира 46,5 м², 5/9 эт.",
-        "address": "Железнодорожный р-н, ул. Огоренко",
-        "price": "72 453 р. 1 557,46  р./м²",
-        "company_link": "None",
-        "company_name": "Агентство ЧУП \"Агентство недвижимости \"Новые адреса\""
-    },
-    {
-        "number": 11,
-        "id": "210829883",
-        "link": "https://www.moyareklama.by/single/ad/210829883",
-        "title": "4-ком. квартира 79,6 м², 7/14 эт.",
-        "address": "Железнодорожный р-н, ул. Кожара, д. 6",
-        "price": "126 600 р. 1 590,45  р./м²",
-        "company_link": "/single_spec.php?id=210652159",
-        "company_name": "Агентство ООО \"Центр недвижимости \"Пакодан Регион\""
-    },
-    {
-        "number": 12,
-        "id": "210842467",
-        "link": "https://www.moyareklama.by/single/ad/210842467",
-        "title": "3-ком. квартира 63,6 м², 5/5 эт.",
-        "address": "Советский р-н, ул. Клермон-Ферран, д. 14",
-        "price": "105 800 р. 1 663,52  р./м²",
-        "company_link": "/single_spec.php?id=208314513",
-        "company_name": "Агентство ООО \"Капитал недвижимости\""
-    },
-    {
-        "number": 13,
-        "id": "210831367",
-        "link": "https://www.moyareklama.by/single/ad/210831367",
-        "title": "4-ком. квартира 80,9 м², 4/9 эт.",
-        "address": "Советский р-н, ул. Б.Хмельницкого, д. 126 (5-й микрорайон)",
-        "price": "115 000 р. 1 421,51  р./м²",
-        "company_link": "/single_spec.php?id=200856033",
-        "company_name": "Агентство ООО \"Лига права-Недвижимость\""
-    },
-    {
-        "number": 14,
-        "id": "210837781",
-        "link": "https://www.moyareklama.by/single/ad/210837781",
-        "title": "1-ком. квартира 29 м², 3/9 эт.",
-        "address": "Железнодорожный р-н, пр-т Космонавтов, д. 94",
-        "price": "39 300 р. 1 357,51  р./м²",
-        "company_link": "/single_spec.php?id=208314513",
-        "company_name": "Агентство ООО \"Капитал недвижимости\""
-    },
-    {
-        "number": 15,
-        "id": "210843778",
-        "link": "https://www.moyareklama.by/single/ad/210843778",
-        "title": "3-ком. квартира 65,2 м², 2/9 эт.",
-        "address": "Центральный р-н, ул. Мазурова, д. 14",
-        "price": "125 000 р. 1 918,65  р./м²",
-        "company_link": "/single_spec.php?id=207501945",
-        "company_name": "Агентство ООО \"Гид по недвижимости\""
-    },
-    {
-        "number": 16,
         "id": "210843937",
         "link": "https://www.moyareklama.by/single/ad/210843937",
         "title": "3-ком. квартира 57,1 м², 1/5 эт.",
@@ -760,7 +210,7 @@
         "company_name": "Агентство ОДО \"Юриэлт\""
     },
     {
-        "number": 17,
+        "number": 2,
         "id": "210845478",
         "link": "https://www.moyareklama.by/single/ad/210845478",
         "title": "3-ком. квартира 112 м², 6/6 эт.",
@@ -770,7 +220,7 @@
         "company_name": "Агентство"
     },
     {
-        "number": 18,
+        "number": 3,
         "id": "210846412",
         "link": "https://www.moyareklama.by/single/ad/210846412",
         "title": "2-ком. квартира 45,7 м², 1/5 эт.",
@@ -780,7 +230,17 @@
         "company_name": "Агентство ООО \"Твой риэлтер\""
     },
     {
-        "number": 19,
+        "number": 4,
+        "id": "210848188",
+        "link": "https://www.moyareklama.by/single/ad/210848188",
+        "title": "3-ком. квартира 66,7 м², 4/9 эт.",
+        "address": "Центральный р-н, ул. Макаёнка, д. 23",
+        "price": "130 000 р. 1 949,03  р./м²",
+        "company_link": "/single_spec.php?id=207501945",
+        "company_name": "Агентство \"Гид по недвижимости\""
+    },
+    {
+        "number": 5,
         "id": "210846675",
         "link": "https://www.moyareklama.by/single/ad/210846675",
         "title": "1-ком. квартира 30 м², 4/9 эт.",
@@ -790,7 +250,7 @@
         "company_name": "Агентство ООО \"Капитал недвижимости\""
     },
     {
-        "number": 20,
+        "number": 6,
         "id": "210847193",
         "link": "https://www.moyareklama.by/single/ad/210847193",
         "title": "3-ком. квартира 65 м², 10/10 эт.",
@@ -800,174 +260,714 @@
         "company_name": "Агентство ООО \"Гид по недвижимости\""
     },
     {
-        "number": 1,
-        "id": "210766255",
-        "link": "https://www.moyareklama.by/single/ad/210766255",
-        "title": "3-ком. квартира 64,8 м², 8/9 эт.",
-        "address": "Советский р-н, ул. Черноморская, д. 9 (Черноморский рынок)",
-        "price": "83 200 р. 1 283,95  р./м²",
-        "company_link": "/single_spec.php?id=207501945",
-        "company_name": "Агентство ООО \"Гид по недвижимости\""
+        "number": 7,
+        "id": "210848471",
+        "link": "https://www.moyareklama.by/single/ad/210848471",
+        "title": "3-ком. квартира 70,5 м², 1/11 эт.",
+        "address": "Советский р-н, ул. Гомельская, д. 66 (ост. \"3-я школа\")",
+        "price": "112 000 р. 1 588,65  р./м²",
+        "company_link": "None",
+        "company_name": "Застройщик Государственное предприятие \"УКС г.Гомеля\""
     },
     {
-        "number": 2,
-        "id": "210772025",
-        "link": "https://www.moyareklama.by/single/ad/210772025",
-        "title": "2-ком. квартира 51,5 м², 1/9 эт.",
-        "address": "Железнодорожный р-н, ул. Свиридова, д. 29",
-        "price": "114 400 р. 2 221,36  р./м²",
-        "company_link": "/single_spec.php?id=210652159",
-        "company_name": "Агентство ООО \"Центр недвижимости \"ПАКОДАН Регион\""
-    },
-    {
-        "number": 3,
-        "id": "210767558",
-        "link": "https://www.moyareklama.by/single/ad/210767558",
-        "title": "1-ком. квартира 30,1 м², 2/3 эт.",
-        "address": "Железнодорожный р-н, ул. Красноармейская, д. 5",
-        "price": "55 430 р. 1 844,59  р./м²",
-        "company_link": "/single_spec.php?id=208314513",
-        "company_name": "Агентство ООО \"Капитал недвижимости\""
-    },
-    {
-        "number": 4,
-        "id": "210772012",
-        "link": "https://www.moyareklama.by/single/ad/210772012",
-        "title": "3-ком. квартира 77,7 м², 8/9 эт.",
-        "address": "Центральный р-н, ул. Мазурова, д. 59/3",
-        "price": "193 220 р. 2 486,74  р./м²",
+        "number": 8,
+        "id": "210848330",
+        "link": "https://www.moyareklama.by/single/ad/210848330",
+        "title": "1-ком. квартира 30 м², 1/4 эт.",
+        "address": "Центральный р-н, ул. Волотовская, д. 2",
+        "price": "71 000 р. 2 366,67  р./м²",
         "company_link": "/single_spec.php?id=210652159",
         "company_name": "Агентство ООО \"Центр недвижимости \"Пакодан Регион\""
     },
     {
-        "number": 5,
-        "id": "210774211",
-        "link": "https://www.moyareklama.by/single/ad/210774211",
-        "title": "2-ком. квартира 46,8 м², 4/9 эт.",
-        "address": "Советский р-н, ул. Гайдара, д. 14",
-        "price": "72 750 р. 1 554,49  р./м²",
-        "company_link": "/single_spec.php?id=209876601",
-        "company_name": "Агентство ОДО \"Юриэлт\""
+        "number": 9,
+        "id": "210848461",
+        "link": "https://www.moyareklama.by/single/ad/210848461",
+        "title": "3-ком. квартира 80,5 м², 5/5 эт.",
+        "address": "Советский р-н, ул. Лермонтова, д. 11 (ул.Барыкина)",
+        "price": "136 000 р. 1 689,44  р./м²",
+        "company_link": "None",
+        "company_name": "Застройщик Государственное предприятие \"УКС г.Гомеля\""
     },
     {
-        "number": 6,
-        "id": "210776666",
-        "link": "https://www.moyareklama.by/single/ad/210776666",
-        "title": "1-ком. квартира 28,9 м², 8/9 эт.",
-        "address": "Советский р-н, ул. Минская, д. 10",
-        "price": "33 075 р. 1 144,46  р./м²",
+        "number": 10,
+        "id": "210849104",
+        "link": "https://www.moyareklama.by/single/ad/210849104",
+        "title": "3-ком. квартира 70,1 м², 7/10 эт.",
+        "address": "Советский р-н, ул. Барыкина, д. 100 (кинотеатр \"Октябрь\")",
+        "price": "112 840 р. 1 609,70  р./м²",
+        "company_link": "/single_spec.php?id=209978187",
+        "company_name": "Агентство ООО \"Твой риэлтер\""
+    },
+    {
+        "number": 11,
+        "id": "210849983",
+        "link": "https://www.moyareklama.by/single/ad/210849983",
+        "title": "3-ком. квартира 64,8 м², 6/9 эт.",
+        "address": "Новобелицкий р-н, ул. Жемчужная",
+        "price": "",
+        "company_link": "None",
+        "company_name": "Агентство ЧУП \"Агентство недвижимости \"Новые адреса\""
+    },
+    {
+        "number": 12,
+        "id": "210850002",
+        "link": "https://www.moyareklama.by/single/ad/210850002",
+        "title": "2-ком. квартира 49 м², 1/5 эт.",
+        "address": "Советский р-н, пр-т Октября, д. 19",
+        "price": "62 660 р. 1 278,78  р./м²",
         "company_link": "/single_spec.php?id=208314513",
-        "company_name": "Агентство ООО \"Капитал Недвижимости\""
+        "company_name": "Агентство ООО \"Капитал недвижимости\""
     },
     {
-        "number": 7,
-        "id": "210777377",
-        "link": "https://www.moyareklama.by/single/ad/210777377",
-        "title": "2-ком. квартира 58,6 м², 1/18 эт.",
-        "address": "Железнодорожный р-н, ул. Чечерская, д. 6",
-        "price": "112 500 р. 1 919,80  р./м²",
+        "number": 13,
+        "id": "210852984",
+        "link": "https://www.moyareklama.by/single/ad/210852984",
+        "title": "3-ком. квартира 84 м², 1/1 эт.",
+        "address": "Новобелицкий р-н, ул. Белого, д. 21",
+        "price": "125 000 р. 1 488,10  р./м²",
         "company_link": "/single_spec.php?id=210567805",
         "company_name": "Агентство ООО \"А21 Недвижимость центр услуг\""
     },
     {
+        "number": 14,
+        "id": "210853681",
+        "link": "https://www.moyareklama.by/single/ad/210853681",
+        "title": "2-ком. квартира 45,4 м², 5/5 эт.",
+        "address": "Центральный р-н, ул. Советская, д. 54",
+        "price": "68 000 р. 1 497,80  р./м²",
+        "company_link": "/single_spec.php?id=209978187",
+        "company_name": "Агентство ООО \"Твой риэлтер\""
+    },
+    {
+        "number": 15,
+        "id": "210854776",
+        "link": "https://www.moyareklama.by/single/ad/210854776",
+        "title": "2-ком. квартира 61,8 м², 17/18 эт.",
+        "address": "Центральный р-н, ул. Мазурова",
+        "price": "",
+        "company_link": "None",
+        "company_name": "Агентство ЧУП \"Агентство недвижимости \"Новые адреса\""
+    },
+    {
+        "number": 16,
+        "id": "210856387",
+        "link": "https://www.moyareklama.by/single/ad/210856387",
+        "title": "3-ком. квартира 65,2 м², 10/10 эт.",
+        "address": "Центральный р-н, ул. Чечерская, д. 13",
+        "price": "127 920 р. 1 961,96  р./м²",
+        "company_link": "/single_spec.php?id=209978187",
+        "company_name": "Агентство ООО \"Твой риэлтер\""
+    },
+    {
+        "number": 17,
+        "id": "210858328",
+        "link": "https://www.moyareklama.by/single/ad/210858328",
+        "title": "3-ком. квартира 71,2 м², 5/9 эт.",
+        "address": "Железнодорожный р-н, ул. Чапаева, д. 4",
+        "price": "93 100 р. 1 307,58  р./м²",
+        "company_link": "/single_spec.php?id=208314513",
+        "company_name": "Агентство ООО \"Капитал недвижимости\""
+    },
+    {
+        "number": 18,
+        "id": "210860270",
+        "link": "https://www.moyareklama.by/single/ad/210860270",
+        "title": "3-ком. квартира 75,2 м², 18/18 эт.",
+        "address": "Советский р-н, пр-т Речицкий, д. 78",
+        "price": "114 540 р. 1 523,54  р./м²",
+        "company_link": "/single_spec.php?id=209978187",
+        "company_name": "Агентство ООО \"Твой риэлтер\""
+    },
+    {
+        "number": 19,
+        "id": "210859333",
+        "link": "https://www.moyareklama.by/single/ad/210859333",
+        "title": "1-ком. квартира 30,9 м², 9/10 эт.",
+        "address": "Центральный р-н, ул. Чечерская, д. 21",
+        "price": "65 583 р. 2 122,43  р./м²",
+        "company_link": "/single_spec.php?id=209876601",
+        "company_name": "Агентство ОДО \"Юриэлт\""
+    },
+    {
+        "number": 20,
+        "id": "210860168",
+        "link": "https://www.moyareklama.by/single/ad/210860168",
+        "title": "1-ком. квартира 35,4 м², 5/5 эт.",
+        "address": "Советский р-н, мкр Энергетиков, д. 29",
+        "price": "42 330 р. 1 195,76  р./м²",
+        "company_link": "/single_spec.php?id=209978187",
+        "company_name": "Агентство ООО \"Твой риэлтер\""
+    },
+    {
+        "number": 1,
+        "id": "210849983",
+        "link": "https://www.moyareklama.by/single/ad/210849983",
+        "title": "3-ком. квартира 64,8 м², 6/9 эт.",
+        "address": "Новобелицкий р-н, ул. Жемчужная",
+        "price": "",
+        "company_link": "None",
+        "company_name": "Агентство ЧУП \"Агентство недвижимости \"Новые адреса\""
+    },
+    {
+        "number": 2,
+        "id": "210850002",
+        "link": "https://www.moyareklama.by/single/ad/210850002",
+        "title": "2-ком. квартира 49 м², 1/5 эт.",
+        "address": "Советский р-н, пр-т Октября, д. 19",
+        "price": "62 660 р. 1 278,78  р./м²",
+        "company_link": "/single_spec.php?id=208314513",
+        "company_name": "Агентство ООО \"Капитал недвижимости\""
+    },
+    {
+        "number": 3,
+        "id": "210852984",
+        "link": "https://www.moyareklama.by/single/ad/210852984",
+        "title": "3-ком. квартира 84 м², 1/1 эт.",
+        "address": "Новобелицкий р-н, ул. Белого, д. 21",
+        "price": "125 000 р. 1 488,10  р./м²",
+        "company_link": "/single_spec.php?id=210567805",
+        "company_name": "Агентство ООО \"А21 Недвижимость центр услуг\""
+    },
+    {
+        "number": 4,
+        "id": "210853681",
+        "link": "https://www.moyareklama.by/single/ad/210853681",
+        "title": "2-ком. квартира 45,4 м², 5/5 эт.",
+        "address": "Центральный р-н, ул. Советская, д. 54",
+        "price": "68 000 р. 1 497,80  р./м²",
+        "company_link": "/single_spec.php?id=209978187",
+        "company_name": "Агентство ООО \"Твой риэлтер\""
+    },
+    {
+        "number": 5,
+        "id": "210854776",
+        "link": "https://www.moyareklama.by/single/ad/210854776",
+        "title": "2-ком. квартира 61,8 м², 17/18 эт.",
+        "address": "Центральный р-н, ул. Мазурова",
+        "price": "",
+        "company_link": "None",
+        "company_name": "Агентство ЧУП \"Агентство недвижимости \"Новые адреса\""
+    },
+    {
+        "number": 6,
+        "id": "210856387",
+        "link": "https://www.moyareklama.by/single/ad/210856387",
+        "title": "3-ком. квартира 65,2 м², 10/10 эт.",
+        "address": "Центральный р-н, ул. Чечерская, д. 13",
+        "price": "127 920 р. 1 961,96  р./м²",
+        "company_link": "/single_spec.php?id=209978187",
+        "company_name": "Агентство ООО \"Твой риэлтер\""
+    },
+    {
+        "number": 7,
+        "id": "210858328",
+        "link": "https://www.moyareklama.by/single/ad/210858328",
+        "title": "3-ком. квартира 71,2 м², 5/9 эт.",
+        "address": "Железнодорожный р-н, ул. Чапаева, д. 4",
+        "price": "93 100 р. 1 307,58  р./м²",
+        "company_link": "/single_spec.php?id=208314513",
+        "company_name": "Агентство ООО \"Капитал недвижимости\""
+    },
+    {
         "number": 8,
-        "id": "210777618",
-        "link": "https://www.moyareklama.by/single/ad/210777618",
-        "title": "2-ком. квартира 46 м², 2/5 эт.",
-        "address": "Железнодорожный р-н, пр-т Победы, д. 25А",
-        "price": "96 400 р. 2 095,65  р./м²",
-        "company_link": "/single_spec.php?id=210652159",
-        "company_name": "Агентство ООО \"Центр недвижимости \"ПАКОДАН Регион\""
+        "id": "210860270",
+        "link": "https://www.moyareklama.by/single/ad/210860270",
+        "title": "3-ком. квартира 75,2 м², 18/18 эт.",
+        "address": "Советский р-н, пр-т Речицкий, д. 78",
+        "price": "114 540 р. 1 523,54  р./м²",
+        "company_link": "/single_spec.php?id=209978187",
+        "company_name": "Агентство ООО \"Твой риэлтер\""
     },
     {
         "number": 9,
-        "id": "210783363",
-        "link": "https://www.moyareklama.by/single/ad/210783363",
-        "title": "3-ком. квартира 70 м², 11/12 эт.",
-        "address": "Центральный р-н, ул. Хатаевича, д. 59 (Мельников луг)",
-        "price": "120 960 р. 1 728  р./м²",
-        "company_link": "/single_spec.php?id=207501945",
-        "company_name": "Агентство ООО \"Гид по недвижимости\""
+        "id": "210859333",
+        "link": "https://www.moyareklama.by/single/ad/210859333",
+        "title": "1-ком. квартира 30,9 м², 9/10 эт.",
+        "address": "Центральный р-н, ул. Чечерская, д. 21",
+        "price": "65 583 р. 2 122,43  р./м²",
+        "company_link": "/single_spec.php?id=209876601",
+        "company_name": "Агентство ОДО \"Юриэлт\""
     },
     {
         "number": 10,
-        "id": "210799447",
-        "link": "https://www.moyareklama.by/single/ad/210799447",
-        "title": "1-ком. квартира 34,9 м², 1/9 эт.",
-        "address": "Железнодорожный р-н, ул. Телегина, д. 21",
-        "price": "",
-        "company_link": "/single_spec.php?id=210280869",
-        "company_name": "Агентство ООО \"Ваше агентство недвижимости\""
+        "id": "210860168",
+        "link": "https://www.moyareklama.by/single/ad/210860168",
+        "title": "1-ком. квартира 35,4 м², 5/5 эт.",
+        "address": "Советский р-н, мкр Энергетиков, д. 29",
+        "price": "42 330 р. 1 195,76  р./м²",
+        "company_link": "/single_spec.php?id=209978187",
+        "company_name": "Агентство ООО \"Твой риэлтер\""
     },
     {
         "number": 11,
-        "id": "210802047",
-        "link": "https://www.moyareklama.by/single/ad/210802047",
-        "title": "2-ком. квартира 46,7 м², 1/9 эт.",
-        "address": "Центральный р-н, ул. Телегина, д. 19",
-        "price": "72 800 р. 1 558,89  р./м²",
+        "id": "210862153",
+        "link": "https://www.moyareklama.by/single/ad/210862153",
+        "title": "1-ком. квартира 30,9 м², 9/10 эт.",
+        "address": "Центральный р-н, ул. Чечерская, д. 27",
+        "price": "62 250 р. 2 016,52  р./м²",
         "company_link": "/single_spec.php?id=209978187",
         "company_name": "Агентство ООО \"Твой риэлтер\""
     },
     {
         "number": 12,
-        "id": "210808867",
-        "link": "https://www.moyareklama.by/single/ad/210808867",
-        "title": "3-ком. квартира 71,9 м², 3/5 эт.",
-        "address": "Центральный р-н, ул. Трудовая, д. 5А",
-        "price": "129 600 р. 1 802,50  р./м²",
-        "company_link": "/single_spec.php?id=210652159",
-        "company_name": "Агентство ООО \"Центр недвижимости \"Пакодан Регион\""
+        "id": "210861389",
+        "link": "https://www.moyareklama.by/single/ad/210861389",
+        "title": "2-ком. квартира 49,7 м², 4/5 эт.",
+        "address": "Центральный р-н, пр-т Ленина, д. 34",
+        "price": "80 735 р. 1 625,76  р./м²",
+        "company_link": "/single_spec.php?id=208314513",
+        "company_name": "Агентство ООО \"Капитал недвижимости\""
     },
     {
         "number": 13,
-        "id": "210808485",
-        "link": "https://www.moyareklama.by/single/ad/210808485",
-        "title": "1-ком. квартира 28,1 м², 4/4 эт.",
-        "address": "Центральный р-н, ул. Трудовая, д. 5 (р-н ост. \"Площадь Ленина\")",
+        "id": "210862289",
+        "link": "https://www.moyareklama.by/single/ad/210862289",
+        "title": "3-ком. квартира 112 м², 3/6 эт.",
+        "address": "Железнодорожный р-н, ул. Ленина, д. 51 (Дом Комунны)",
+        "price": "",
+        "company_link": "/single_spec.php?id=207501945",
+        "company_name": "Агентство ООО «Гид по недвижимости»"
+    },
+    {
+        "number": 14,
+        "id": "210863628",
+        "link": "https://www.moyareklama.by/single/ad/210863628",
+        "title": "1-ком. квартира 38 м², 1/3 эт.",
+        "address": "Гомельский р-н, аг. Урицкое, ул. Парковая, д. 7",
+        "price": "51 000 р. 1 342,11  р./м²",
+        "company_link": "/single_spec.php?id=207501945",
+        "company_name": "Агентство \"Гид по недвижимости\""
+    },
+    {
+        "number": 15,
+        "id": "210861391",
+        "link": "https://www.moyareklama.by/single/ad/210861391",
+        "title": "2-ком. квартира 55,9 м², 2/10 эт.",
+        "address": "Советский р-н, ул. Г.Денисенко, д. 48",
+        "price": "",
+        "company_link": "/single_spec.php?id=209978187",
+        "company_name": "Агентство ООО \"Твой риэлтер\""
+    },
+    {
+        "number": 16,
+        "id": "210862179",
+        "link": "https://www.moyareklama.by/single/ad/210862179",
+        "title": "3-ком. квартира 79,9 м², 2/10 эт.",
+        "address": "Центральный р-н, ул. Тельмана, д. 3 (Новый универмаг)",
+        "price": "237 500 р. 2 972,47  р./м²",
+        "company_link": "/single_spec.php?id=207501945",
+        "company_name": "Агентство ООО \"Гид по недвижимости\""
+    },
+    {
+        "number": 17,
+        "id": "210871652",
+        "link": "https://www.moyareklama.by/single/ad/210871652",
+        "title": "3-ком. квартира 78,9 м², 4/5 эт.",
+        "address": "Центральный р-н, пр-т Ленина, д. 22 (остановка \"Карповича\")",
         "price": "",
         "company_link": "/single_spec.php?id=210280869",
         "company_name": "Агентство ООО \"Ваше агентство недвижимости\""
     },
     {
+        "number": 18,
+        "id": "210866470",
+        "link": "https://www.moyareklama.by/single/ad/210866470",
+        "title": "4-ком. квартира 63,3 м², 5/5 эт.",
+        "address": "Советский р-н, ул. Б.Хмельницкого, д. 64",
+        "price": "",
+        "company_link": "/single_spec.php?id=208314513",
+        "company_name": "Агентство ООО \"Капитал недвижимости\""
+    },
+    {
+        "number": 19,
+        "id": "210868155",
+        "link": "https://www.moyareklama.by/single/ad/210868155",
+        "title": "1-ком. квартира 35,8 м², 10/16 эт.",
+        "address": "Советский р-н, ул. 60 лет СССР, д. 1 (остановка \"Жукова\")",
+        "price": "",
+        "company_link": "/single_spec.php?id=210280869",
+        "company_name": "Агентство ООО \"Ваше агентство недвижимости\""
+    },
+    {
+        "number": 20,
+        "id": "210874044",
+        "link": "https://www.moyareklama.by/single/ad/210874044",
+        "title": "2-ком. квартира 41,4 м², 1/5 эт.",
+        "address": "Советский р-н, пр-т Речицкий, д. 4б",
+        "price": "",
+        "company_link": "/single_spec.php?id=208314513",
+        "company_name": "Агентство ООО \"Капитал недвижимости\""
+    },
+    {
+        "number": 1,
+        "id": "210874044",
+        "link": "https://www.moyareklama.by/single/ad/210874044",
+        "title": "2-ком. квартира 41,4 м², 1/5 эт.",
+        "address": "Советский р-н, пр-т Речицкий, д. 4б",
+        "price": "",
+        "company_link": "/single_spec.php?id=208314513",
+        "company_name": "Агентство ООО \"Капитал недвижимости\""
+    },
+    {
+        "number": 2,
+        "id": "210881685",
+        "link": "https://www.moyareklama.by/single/ad/210881685",
+        "title": "2-ком. квартира 51,5 м², 2/9 эт.",
+        "address": "Центральный р-н, ул. Мазурова, д. 18",
+        "price": "110 522 р. 2 146,06  р./м²",
+        "company_link": "/single_spec.php?id=208314513",
+        "company_name": "Агентство ООО \"Капитал Недвижимости\""
+    },
+    {
+        "number": 3,
+        "id": "210880538",
+        "link": "https://www.moyareklama.by/single/ad/210880538",
+        "title": "2-ком. квартира 54 м², 3/5 эт.",
+        "address": "Центральный р-н, ул. Рогачёвская, д. 4",
+        "price": "",
+        "company_link": "/single_spec.php?id=210280869",
+        "company_name": "Агентство ООО \"Ваше агентство недвижимости\""
+    },
+    {
+        "number": 4,
+        "id": "210880828",
+        "link": "https://www.moyareklama.by/single/ad/210880828",
+        "title": "1-ком. квартира 36,9 м², 11/11 эт.",
+        "address": "Советский р-н, ул. Пенязькова, д. 55Б",
+        "price": "67 690 р. 1 834,42  р./м²",
+        "company_link": "/single_spec.php?id=208314513",
+        "company_name": "Агентство ООО \"Капитал недвижимости\""
+    },
+    {
+        "number": 5,
+        "id": "210878073",
+        "link": "https://www.moyareklama.by/single/ad/210878073",
+        "title": "Студия 76,2 м², 18/18 эт.",
+        "address": "Железнодорожный р-н, ул. Бородина, д. 6а",
+        "price": "159 000 р. 2 086,61  р./м²",
+        "company_link": "None",
+        "company_name": "Собственник"
+    },
+    {
+        "number": 6,
+        "id": "210877795",
+        "link": "https://www.moyareklama.by/single/ad/210877795",
+        "title": "1-ком. квартира 39,9 м², 8/12 эт.",
+        "address": "Новобелицкий р-н, ул. Ильича, д. 85",
+        "price": "57 000 р. 1 428,57  р./м²",
+        "company_link": "None",
+        "company_name": "Собственник"
+    },
+    {
+        "number": 7,
+        "id": "210871982",
+        "link": "https://www.moyareklama.by/single/ad/210871982",
+        "title": "4-ком. квартира 120 м², 1,3/3 эт.",
+        "address": "Центральный р-н, ул. Кленковская, д. 14 (с видом на оз. Волотовское)",
+        "price": "",
+        "company_link": "None",
+        "company_name": "Застройщик"
+    },
+    {
+        "number": 8,
+        "id": "210869691",
+        "link": "https://www.moyareklama.by/single/ad/210869691",
+        "title": "1-ком. квартира 33,5 м², 5/5 эт.",
+        "address": "Советский р-н, ул. Барыкина, д. 163",
+        "price": "54 900 р. 1 638,81  р./м²",
+        "company_link": "None",
+        "company_name": "Собственник"
+    },
+    {
+        "number": 9,
+        "id": "210882336",
+        "link": "https://www.moyareklama.by/single/ad/210882336",
+        "title": "3-ком. квартира 77 м², 12/16 эт.",
+        "address": "Железнодорожный р-н, ул. Виноградная, д. 20 (Район Новая жизнь)",
+        "price": "110 000 р. 1 428,57  р./м²",
+        "company_link": "None",
+        "company_name": "Собственник"
+    },
+    {
+        "number": 10,
+        "id": "210876068",
+        "link": "https://www.moyareklama.by/single/ad/210876068",
+        "title": "1-ком. квартира 30 м², 3/5 эт.",
+        "address": "Железнодорожный р-н, ул. Ветковская, д. 1 (БелГУТ)",
+        "price": "58 000 р. 1 933,33  р./м²",
+        "company_link": "None",
+        "company_name": "Собственник"
+    },
+    {
+        "number": 11,
+        "id": "210866127",
+        "link": "https://www.moyareklama.by/single/ad/210866127",
+        "title": "1-ком. квартира 30,5 м², 6/9 эт.",
+        "address": "Центральный р-н, ул. Тельмана, д. 39 (универмаг Гомель)",
+        "price": "55 000 р. 1 806,24  р./м²",
+        "company_link": "None",
+        "company_name": "Собственник"
+    },
+    {
+        "number": 12,
+        "id": "210874748",
+        "link": "https://www.moyareklama.by/single/ad/210874748",
+        "title": "2-ком. квартира 48,3 м², 8/18 эт.",
+        "address": "Центральный р-н, ул. Бородина, д. 6",
+        "price": "120 000 р. 2 484,47  р./м²",
+        "company_link": "None",
+        "company_name": "Собственник"
+    },
+    {
+        "number": 13,
+        "id": "210874749",
+        "link": "https://www.moyareklama.by/single/ad/210874749",
+        "title": "3-ком. квартира 72,8 м², 8/18 эт.",
+        "address": "Центральный р-н, ул. Бородина, д. 6",
+        "price": "165 000 р. 2 266,48  р./м²",
+        "company_link": "None",
+        "company_name": "Собственник"
+    },
+    {
         "number": 14,
-        "id": "210808840",
-        "link": "https://www.moyareklama.by/single/ad/210808840",
-        "title": "2-ком. квартира 47 м², 5/9 эт.",
-        "address": "Железнодорожный р-н, ул. Герое Подпольщиков, д. 21",
-        "price": "89 170 р. 1 896,83  р./м²",
-        "company_link": "/single_spec.php?id=210652159",
-        "company_name": "Агентство ООО \"Центр недвижимости \"ПАКОДАН Регион\""
+        "id": "210876066",
+        "link": "https://www.moyareklama.by/single/ad/210876066",
+        "title": "1-ком. квартира 30 м², 4/5 эт.",
+        "address": "Железнодорожный р-н, ул. Комсомольская, д. 15 (БелГУТ)",
+        "price": "69 000 р. 2 300  р./м²",
+        "company_link": "None",
+        "company_name": "Собственник"
     },
     {
         "number": 15,
-        "id": "210813331",
-        "link": "https://www.moyareklama.by/single/ad/210813331",
-        "title": "1-ком. квартира 41,5 м², 4/4 эт.",
-        "address": "Центральный р-н, пр-т Ленина, д. 45 (ост. \"Карповича\")",
-        "price": "",
-        "company_link": "/single_spec.php?id=210280869",
-        "company_name": "Агентство ООО \"Ваше агентство недвижимоси\""
+        "id": "210870316",
+        "link": "https://www.moyareklama.by/single/ad/210870316",
+        "title": "2-ком. квартира 73,4 м², 8/18 эт.",
+        "address": "Центральный р-н, ул. Бородина, д. 6",
+        "price": "180 000 р. 2 452,32  р./м²",
+        "company_link": "None",
+        "company_name": "Собственник"
     },
     {
         "number": 16,
-        "id": "210813524",
-        "link": "https://www.moyareklama.by/single/ad/210813524",
-        "title": "1-ком. квартира 38,6 м², 7/12 эт.",
-        "address": "Железнодорожный р-н, ул. Советская, д. 163",
-        "price": "43 632 р. 1 130,36  р./м²",
+        "id": "210081363",
+        "link": "https://www.moyareklama.by/single/ad/210081363",
+        "title": "1-ком. квартира 31 м², 2/4 эт.",
+        "address": "Железнодорожный р-н, ул. Кирова, д. 44",
+        "price": "64 500 р. 2 082,66  р./м²",
         "company_link": "/single_spec.php?id=209876601",
         "company_name": "Агентство ОДО \"Юриэлт\""
     },
     {
         "number": 17,
-        "id": "210813687",
-        "link": "https://www.moyareklama.by/single/ad/210813687",
-        "title": "2-ком. квартира 49,3 м², 4/5 эт.",
-        "address": "Советский р-н, ул. Богдана Хмельницкого, д. 85",
-        "price": "67 480 р. 1 368,76  р./м²",
+        "id": "210167993",
+        "link": "https://www.moyareklama.by/single/ad/210167993",
+        "title": "2-ком. квартира 74,5 м², 11/18 эт.",
+        "address": "Центральный р-н, ул. Бородина, д. 6",
+        "price": "163 432 р. 2 193,72  р./м²",
+        "company_link": "/single_spec.php?id=209978187",
+        "company_name": "Агентство ООО \"Твой риэлтер\""
+    },
+    {
+        "number": 18,
+        "id": "210354892",
+        "link": "https://www.moyareklama.by/single/ad/210354892",
+        "title": "3-ком. квартира 75,2 м², 1/10 эт.",
+        "address": "Железнодорожный р-н, ул. Докутович (ост. \"Полесская\")",
+        "price": "127 000 р. 1 688,83  р./м²",
+        "company_link": "None",
+        "company_name": "Застройщик Государственное предприятие \"УКС города Гомеля\""
+    },
+    {
+        "number": 19,
+        "id": "210495201",
+        "link": "https://www.moyareklama.by/single/ad/210495201",
+        "title": "2-ком. квартира 56,3 м², 8/10 эт.",
+        "address": "Советский р-н, ул. Денисенко, д. 66",
+        "price": "131 800 р. 2 341,03  р./м²",
+        "company_link": "/single_spec.php?id=209876601",
+        "company_name": "Агентство ОДО \"Юриэлт\""
+    },
+    {
+        "number": 20,
+        "id": "210548566",
+        "link": "https://www.moyareklama.by/single/ad/210548566",
+        "title": "3-ком. квартира 76,9 м², 10/14 эт.",
+        "address": "Железнодорожный р-н, ул. Кожара, д. 26",
+        "price": "146 000 р. 1 897,58  р./м²",
+        "company_link": "/single_spec.php?id=207501945",
+        "company_name": "Агентство ООО \"Гид по недвижимости\""
+    },
+    {
+        "number": 1,
+        "id": "210848471",
+        "link": "https://www.moyareklama.by/single/ad/210848471",
+        "title": "3-ком. квартира 70,5 м², 1/11 эт.",
+        "address": "Советский р-н, ул. Гомельская, д. 66 (ост. \"3-я школа\")",
+        "price": "112 000 р. 1 588,65  р./м²",
+        "company_link": "None",
+        "company_name": "Застройщик Государственное предприятие \"УКС г.Гомеля\""
+    },
+    {
+        "number": 2,
+        "id": "210848330",
+        "link": "https://www.moyareklama.by/single/ad/210848330",
+        "title": "1-ком. квартира 30 м², 1/4 эт.",
+        "address": "Центральный р-н, ул. Волотовская, д. 2",
+        "price": "71 000 р. 2 366,67  р./м²",
+        "company_link": "/single_spec.php?id=210652159",
+        "company_name": "Агентство ООО \"Центр недвижимости \"Пакодан Регион\""
+    },
+    {
+        "number": 3,
+        "id": "210848461",
+        "link": "https://www.moyareklama.by/single/ad/210848461",
+        "title": "3-ком. квартира 80,5 м², 5/5 эт.",
+        "address": "Советский р-н, ул. Лермонтова, д. 11 (ул.Барыкина)",
+        "price": "136 000 р. 1 689,44  р./м²",
+        "company_link": "None",
+        "company_name": "Застройщик Государственное предприятие \"УКС г.Гомеля\""
+    },
+    {
+        "number": 4,
+        "id": "210849104",
+        "link": "https://www.moyareklama.by/single/ad/210849104",
+        "title": "3-ком. квартира 70,1 м², 7/10 эт.",
+        "address": "Советский р-н, ул. Барыкина, д. 100 (кинотеатр \"Октябрь\")",
+        "price": "112 840 р. 1 609,70  р./м²",
+        "company_link": "/single_spec.php?id=209978187",
+        "company_name": "Агентство ООО \"Твой риэлтер\""
+    },
+    {
+        "number": 5,
+        "id": "210849983",
+        "link": "https://www.moyareklama.by/single/ad/210849983",
+        "title": "3-ком. квартира 64,8 м², 6/9 эт.",
+        "address": "Новобелицкий р-н, ул. Жемчужная",
+        "price": "",
+        "company_link": "None",
+        "company_name": "Агентство ЧУП \"Агентство недвижимости \"Новые адреса\""
+    },
+    {
+        "number": 6,
+        "id": "210850002",
+        "link": "https://www.moyareklama.by/single/ad/210850002",
+        "title": "2-ком. квартира 49 м², 1/5 эт.",
+        "address": "Советский р-н, пр-т Октября, д. 19",
+        "price": "62 660 р. 1 278,78  р./м²",
         "company_link": "/single_spec.php?id=208314513",
         "company_name": "Агентство ООО \"Капитал недвижимости\""
+    },
+    {
+        "number": 7,
+        "id": "210852984",
+        "link": "https://www.moyareklama.by/single/ad/210852984",
+        "title": "3-ком. квартира 84 м², 1/1 эт.",
+        "address": "Новобелицкий р-н, ул. Белого, д. 21",
+        "price": "125 000 р. 1 488,10  р./м²",
+        "company_link": "/single_spec.php?id=210567805",
+        "company_name": "Агентство ООО \"А21 Недвижимость центр услуг\""
+    },
+    {
+        "number": 8,
+        "id": "210853681",
+        "link": "https://www.moyareklama.by/single/ad/210853681",
+        "title": "2-ком. квартира 45,4 м², 5/5 эт.",
+        "address": "Центральный р-н, ул. Советская, д. 54",
+        "price": "68 000 р. 1 497,80  р./м²",
+        "company_link": "/single_spec.php?id=209978187",
+        "company_name": "Агентство ООО \"Твой риэлтер\""
+    },
+    {
+        "number": 9,
+        "id": "210854776",
+        "link": "https://www.moyareklama.by/single/ad/210854776",
+        "title": "2-ком. квартира 61,8 м², 17/18 эт.",
+        "address": "Центральный р-н, ул. Мазурова",
+        "price": "",
+        "company_link": "None",
+        "company_name": "Агентство ЧУП \"Агентство недвижимости \"Новые адреса\""
+    },
+    {
+        "number": 10,
+        "id": "210856387",
+        "link": "https://www.moyareklama.by/single/ad/210856387",
+        "title": "3-ком. квартира 65,2 м², 10/10 эт.",
+        "address": "Центральный р-н, ул. Чечерская, д. 13",
+        "price": "127 920 р. 1 961,96  р./м²",
+        "company_link": "/single_spec.php?id=209978187",
+        "company_name": "Агентство ООО \"Твой риэлтер\""
+    },
+    {
+        "number": 11,
+        "id": "210858328",
+        "link": "https://www.moyareklama.by/single/ad/210858328",
+        "title": "3-ком. квартира 71,2 м², 5/9 эт.",
+        "address": "Железнодорожный р-н, ул. Чапаева, д. 4",
+        "price": "93 100 р. 1 307,58  р./м²",
+        "company_link": "/single_spec.php?id=208314513",
+        "company_name": "Агентство ООО \"Капитал недвижимости\""
+    },
+    {
+        "number": 12,
+        "id": "210860270",
+        "link": "https://www.moyareklama.by/single/ad/210860270",
+        "title": "3-ком. квартира 75,2 м², 18/18 эт.",
+        "address": "Советский р-н, пр-т Речицкий, д. 78",
+        "price": "114 540 р. 1 523,54  р./м²",
+        "company_link": "/single_spec.php?id=209978187",
+        "company_name": "Агентство ООО \"Твой риэлтер\""
+    },
+    {
+        "number": 13,
+        "id": "210859333",
+        "link": "https://www.moyareklama.by/single/ad/210859333",
+        "title": "1-ком. квартира 30,9 м², 9/10 эт.",
+        "address": "Центральный р-н, ул. Чечерская, д. 21",
+        "price": "65 583 р. 2 122,43  р./м²",
+        "company_link": "/single_spec.php?id=209876601",
+        "company_name": "Агентство ОДО \"Юриэлт\""
+    },
+    {
+        "number": 14,
+        "id": "210860168",
+        "link": "https://www.moyareklama.by/single/ad/210860168",
+        "title": "1-ком. квартира 35,4 м², 5/5 эт.",
+        "address": "Советский р-н, мкр Энергетиков, д. 29",
+        "price": "42 330 р. 1 195,76  р./м²",
+        "company_link": "/single_spec.php?id=209978187",
+        "company_name": "Агентство ООО \"Твой риэлтер\""
+    },
+    {
+        "number": 15,
+        "id": "210862153",
+        "link": "https://www.moyareklama.by/single/ad/210862153",
+        "title": "1-ком. квартира 30,9 м², 9/10 эт.",
+        "address": "Центральный р-н, ул. Чечерская, д. 27",
+        "price": "62 250 р. 2 016,52  р./м²",
+        "company_link": "/single_spec.php?id=209978187",
+        "company_name": "Агентство ООО \"Твой риэлтер\""
+    },
+    {
+        "number": 16,
+        "id": "210861389",
+        "link": "https://www.moyareklama.by/single/ad/210861389",
+        "title": "2-ком. квартира 49,7 м², 4/5 эт.",
+        "address": "Центральный р-н, пр-т Ленина, д. 34",
+        "price": "80 735 р. 1 625,76  р./м²",
+        "company_link": "/single_spec.php?id=208314513",
+        "company_name": "Агентство ООО \"Капитал недвижимости\""
+    },
+    {
+        "number": 17,
+        "id": "210861391",
+        "link": "https://www.moyareklama.by/single/ad/210861391",
+        "title": "2-ком. квартира 55,9 м², 2/10 эт.",
+        "address": "Советский р-н, ул. Г.Денисенко, д. 48",
+        "price": "",
+        "company_link": "/single_spec.php?id=209978187",
+        "company_name": "Агентство ООО \"Твой риэлтер\""
     },
     {
         "number": 18,

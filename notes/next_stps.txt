@@ -1,0 +1,2 @@
+1. parse other flats data
+2. get count of pages pagination

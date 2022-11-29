@@ -7,6 +7,7 @@ import pandas as pd
 import os.path
 import time
 
+# functions
 from flats.flats import get_appartments
 
 if __name__ == '__main__':

@@ -34,6 +34,18 @@ for item in items:
     title = item.find('div', class_="adv-list-title").text
     # title = title.replace(" ", "")
     address = item.find('div', class_='adv-list-content').text
+
+    if 'Железнодорожный' in address:
+        category = 'Железнодорожный'
+    if 'Центральный' in address:
+        category = 'Центральный'
+    if 'Советский' in address:
+        category = 'Советский'
+    if 'Новобелицкий' in address:
+        category = 'Новобелицкий'
+    if 'Гомельский' in address:
+        category = 'Гомельский'
+
     status = item.find('div', class_='adv-list-content text').text
     # status = status.replace(" ", "")
 
@@ -49,6 +61,7 @@ for item in items:
     app_dict = {
         'id': item_id,
         'title': title,
+        'category': category,
         'address': address,
         'status': status,
         'links': [main_url + l.get('href') for l in links],

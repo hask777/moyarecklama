@@ -30,51 +30,82 @@ def get_appartments_single():
         num = 0
              
         for item in items:
-           
+            num = num + 1
             link = main_url + item.find('div', class_="title").find('a').get('href')
             data = requests.get(link)
             soup = BeautifulSoup(data.text, 'lxml')
+            # content
+            item_id = link.replace('https://www.moyareklama.by/single/ad/', '')
+            content = soup.find('div', class_="adsContent")
+            title = content.find('h1').text
+            address = content.find('div', class_="address").text
+            # propierties
+            square = content.find('div', class_="square full").text
+            type_house = content.find('div', class_="type_house").text
+            floor = content.find('div', class_="floor").text
+
+            try:
+                water = content.find('div', class_="water").text
+            except:
+                water = None
+            try:
+                bathroom = content.find('div', class_="bathroom").text
+            except:
+                bathroom = None
+            try:
+                balcony = content.find('div', class_="balcony").text
+            except:
+                balcony = None
+            try:
+                repair = content.find('div', class_="repair").text
+            except:
+                repair = None
+
             images = []
 
-            content = soup.find('div', class_="adsContent")
             try:
-                photos_bl = content.find('div', class_='photo_block_ad')
-                if photos_bl == None:
-                    # photos = photos_bl.find_all('div', class_='photo_preview')
-                    
-                    # for image in photos:
-                    #     style = image.get('style')
-                    #     pattern = "\w+"
-                    #     img_url =  re.findall(pattern, style)
-                    #     image = 'https://media1.moyareklama.by/i/p/'+ img_url[8] +'/'+ img_url[9] +'/'+ img_url[10] +'.jpg'
-                    #     images.append(image)
-                    print('False')
-                    
-                else:
-                    num = num + 1
-                    print(num)
-                    
-                    
+                photo = content.find('div', class_="pv1_big_img_container").find('img').get('src')
             except:
-                continue    
-                    
-            
-#             app_dict ={
-#                                 'number': num,
-#                                 'link': link,
-#                                 'images': images,
-#                                 # 'count': counter(count)
-#                         }
+                photo = None
 
-# #             # app_arr.append([link, item_id, title, address, price, company_name, company_link])
-#             app_arr.append(app_dict)
+            try:
+                photos = content.find_all('div', class_='photo_preview')
+                for image in photos:
+                    style = image.get('style')
+                    pattern = "\w+"
+                    img_url =  re.findall(pattern, style)
+                    image = 'https://media1.moyareklama.by/i/p/'+ img_url[8] +'/'+ img_url[9] +'/'+ img_url[10] +'.jpg'
+                    images.append(image)
+                    # print(num)
+            except:
+                images = None
+                          
+            app_dict = {
+                            'number': num,
+                            'id': item_id,
+                            'link': link,
+                            'tile': title.strip(),
+                            'address': address,
+                            'square': square.strip(),
+                            'type_house': type_house.strip(),
+                            'floor': floor.split(),
+                            'water': water,
+                            'bathroom': bathroom,
+                            'balcony': balcony,
+                            'repair': repair,
+                            'photo': photo,
+                            'images': images,
+                        }
 
-#         print(len(app_arr))
+#             # app_arr.append([link, item_id, title, address, price, company_name, company_link])
+            app_arr.append(app_dict)
 
-#     with open(f'files/json/flats.json', 'w', encoding='utf-8') as f:
-#             json.dump(app_arr, f, ensure_ascii = False, indent =4, sort_keys=False)
+        print(len(app_arr))
 
-#     print("JSON File write!")
+    with open(f'files/json/flats_single.json', 'w', encoding='utf-8') as f:
+            json.dump(app_arr, f, ensure_ascii = False, indent =4, sort_keys=False)
+
+    print("JSON File write!")
 
 #     df = pd.read_json('files/json/flats.json')
 #     df.to_csv('files/csv/flats.csv')

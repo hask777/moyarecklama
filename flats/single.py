@@ -17,7 +17,7 @@ def get_appartments_single():
 
     main_url = 'https://www.moyareklama.by'
 
-    for i in range(1,66):
+    for i in range(1,2):
         url = f"https://moyareklama.by/Гомель/квартиры_продажа/все/8/{i}/"
         data = requests.get(url)
         print(url)
@@ -38,6 +38,9 @@ def get_appartments_single():
             item_id = link.replace('https://www.moyareklama.by/single/ad/', '')
             content = soup.find('div', class_="adsContent")
             title = content.find('h1').text
+            # title = image.get('style')
+            pattern = "\w+"
+            title =  re.findall(pattern, title)
             address = content.find('div', class_="address").text
             # propierties
             square = content.find('div', class_="square full").text
@@ -84,7 +87,7 @@ def get_appartments_single():
                             'number': num,
                             'id': item_id,
                             'link': link,
-                            'tile': title.strip(),
+                            'tile': title,
                             'address': address,
                             'square': square.strip(),
                             'type_house': type_house.strip(),
@@ -97,7 +100,7 @@ def get_appartments_single():
                             'images': images,
                         }
 
-#             # app_arr.append([link, item_id, title, address, price, company_name, company_link])
+            # app_arr.append([link, item_id, title, address, square, type_house, floor, water, bathroom, balcony, repair, photo, images])
             app_arr.append(app_dict)
 
         print(len(app_arr))
@@ -107,12 +110,14 @@ def get_appartments_single():
 
     print("JSON File write!")
 
-#     df = pd.read_json('files/json/flats.json')
-#     df.to_csv('files/csv/flats.csv')
+    # df = pd.read_json('files/json/flats_single.json')
+    # df.to_csv('files/csv/flats_single.csv')
 
-#     print('CSV File write!')
+    # print('CSV File write!')
 
-#     # df = pd.DataFrame(app_arr)
-#     # df.to_csv('files/csv/flats.csv')
+    df = pd.DataFrame(app_arr)
+    df.to_csv('files/csv/flats_single.csv')
+
+    print('CSV File write!')
        
 get_appartments_single()         

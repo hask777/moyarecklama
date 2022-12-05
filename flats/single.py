@@ -37,10 +37,23 @@ def get_appartments_single():
             # content
             item_id = link.replace('https://www.moyareklama.by/single/ad/', '')
             content = soup.find('div', class_="adsContent")
+            # Title
             title = content.find('h1').text
-            # title = image.get('style')
+            title_ = title.replace('-ком.', '').replace('квартира ', '').replace('м²', '').replace('эт', '')
             pattern = "\w+"
-            title =  re.findall(pattern, title)
+            title_info =  re.findall(pattern, title_)
+            print(title_info)
+            if len(title_info) == 5 and title_info[0] != 'Студия':
+                rooms = int(title_info[0])
+                sq_live = int(title_info[1] + title_info[2])
+                height = int(title_info[3])
+                tall = int(title_info[4])
+            else:
+                rooms = None
+                sq_live = None
+                height = None
+                tall =None
+
             address = content.find('div', class_="address").text
             # propierties
             square = content.find('div', class_="square full").text
@@ -87,11 +100,15 @@ def get_appartments_single():
                             'number': num,
                             'id': item_id,
                             'link': link,
-                            'tile': title,
+                            'title': title.strip(),
+                            'rooms': rooms,
+                            'sq_live': sq_live,
+                            'height': height,
+                            'tall': tall,
                             'address': address,
                             'square': square.strip(),
                             'type_house': type_house.strip(),
-                            'floor': floor.split(),
+                            'floor': floor,
                             'water': water,
                             'bathroom': bathroom,
                             'balcony': balcony,

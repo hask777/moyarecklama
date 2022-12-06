@@ -42,7 +42,7 @@ def get_appartments_single():
             title_ = title.replace('-ком.', '').replace('квартира ', '').replace('м²', '').replace('эт', '')
             pattern = "\w+"
             title_info =  re.findall(pattern, title_)
-            print(title_info)
+            # print(title_info)
             if len(title_info) == 5 and title_info[0] != 'Студия':
                 rooms = int(title_info[0])
                 sq_live = int(title_info[1] + title_info[2])
@@ -57,23 +57,32 @@ def get_appartments_single():
             address = content.find('div', class_="address").text
             # propierties
             square = content.find('div', class_="square full").text
+            # square_all
+            # square_live
+            # square_kitchen
             type_house = content.find('div', class_="type_house").text
+            type_house = type_house.replace("Тип дома:", '')
+
             floor = content.find('div', class_="floor").text
 
             try:
                 water = content.find('div', class_="water").text
+                water = water.replace('\nВодоснабжение:', '').strip()
             except:
                 water = None
             try:
                 bathroom = content.find('div', class_="bathroom").text
+                bathroom = bathroom.replace('\nСанузел:', '').strip()
             except:
                 bathroom = None
             try:
                 balcony = content.find('div', class_="balcony").text
+                balcony = balcony.replace('\nБалкон: ', '').strip()
             except:
                 balcony = None
             try:
                 repair = content.find('div', class_="repair").text
+                repair = repair.replace('Ремонт: ', '').strip()
             except:
                 repair = None
 

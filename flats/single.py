@@ -42,17 +42,23 @@ def get_appartments_single():
             title_ = title.replace('-ком.', '').replace('квартира ', '').replace('м²', '').replace('эт', '')
             pattern = "\w+"
             title_info =  re.findall(pattern, title_)
-            # print(title_info)
-            if len(title_info) == 5 and title_info[0] != 'Студия':
-                rooms = int(title_info[0])
-                sq_live = int(title_info[1] + title_info[2])
+            print(title_info)
+            if len(title_info) == 5:
+                if 'Студия' in title_info:
+                    rooms = 'Студия'
+                else:
+                    rooms = int(title_info[0])
+                sq_live = int(title_info[1] + title_info[2])/10
                 height = int(title_info[3])
                 tall = int(title_info[4])
-            else:
-                rooms = None
-                sq_live = None
-                height = None
-                tall =None
+            elif len(title_info) == 4:
+                if 'Студия' in title_info:
+                    rooms = 'Студия'
+                else:
+                    rooms = int(title_info[0])
+                sq_live = int(title_info[1])
+                height = int(title_info[2])
+                tall = int(title_info[3])
 
             address = content.find('div', class_="address").text
             # propierties

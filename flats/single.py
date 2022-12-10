@@ -15,9 +15,17 @@ def get_appartments_single():
 
     # headers = {"user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"}
 
-    main_url = 'https://www.moyareklama.by'
+    main_url = 'https://www.moyareklama.by/Гомель/квартиры_продажа/'
 
-    for i in range(1,2):
+    req = requests.get(main_url)
+    soup = BeautifulSoup(req.text, 'lxml')
+    pages = soup.find_all('li', class_='page-item')
+    last = pages[-2].text
+    last = int(last)
+    # print(last)
+
+
+    for i in range(1, last + 1):
         url = f"https://moyareklama.by/Гомель/квартиры_продажа/все/8/{i}/"
         data = requests.get(url)
         print(url)
@@ -36,31 +44,45 @@ def get_appartments_single():
             soup = BeautifulSoup(data.text, 'lxml')
             # content
             item_id = link.replace('https://www.moyareklama.by/single/ad/', '')
-            content = soup.find('div', class_="adsContent")
+            content = soup.find('div', id="one_ads_show")
             # Title
             title = content.find('h1').text
             title_ = title.replace('-ком.', '').replace('квартира ', '').replace('м²', '').replace('эт', '')
             pattern = "\w+"
             title_info =  re.findall(pattern, title_)
-            print(title_info)
+            # print(title_info)
             if len(title_info) == 5:
                 if 'Студия' in title_info:
                     rooms = 'Студия'
                 else:
                     rooms = int(title_info[0])
-                sq_live = int(title_info[1] + title_info[2])/10
-                height = int(title_info[3])
-                tall = int(title_info[4])
+                    sq_live = int(title_info[1] + title_info[2])/10
+                    height = int(title_info[3])
+                    tall = int(title_info[4])
             elif len(title_info) == 4:
                 if 'Студия' in title_info:
                     rooms = 'Студия'
                 else:
                     rooms = int(title_info[0])
-                sq_live = int(title_info[1])
-                height = int(title_info[2])
-                tall = int(title_info[3])
+                    sq_live = int(title_info[1])
+                    height = int(title_info[2])
+                    tall = int(title_info[3])
 
             address = content.find('div', class_="address").text
+            
+            try:
+                prices = content.find_all('div', class_="adsPrice")
+                for pr in prices:
+                    price = pr.find('div', class_='price').text
+                    price = price.replace('             р.', '').strip().replace(' ', '.').replace(',', '')
+                    price = float(price)
+                    price_square = pr.find('div', class_='price_square').text
+                    price_square = price_square.replace('  р./м²', '').replace(',', '.').replace(' ', '')
+                    price_square = float(price_square)
+
+            except:
+                price = None
+                price_square = None
             # propierties
             square = content.find('div', class_="square full").text
             # square_all
@@ -115,12 +137,14 @@ def get_appartments_single():
                             'number': num,
                             'id': item_id,
                             'link': link,
-                            'title': title.strip(),
+                            'title': title,
+                            'address': address,
+                            'price': price,
+                            'price_square': price_square,
                             'rooms': rooms,
                             'sq_live': sq_live,
                             'height': height,
                             'tall': tall,
-                            'address': address,
                             'square': square.strip(),
                             'type_house': type_house.strip(),
                             'floor': floor,

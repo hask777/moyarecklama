@@ -16,6 +16,13 @@ def get_appartments():
 
     main_url = 'https://www.moyareklama.by'
 
+    # if file flats.json exist
+        # open file
+        # go through all ids
+        # compare if exist id in list app_arr
+        # add to app_arr
+    # else do ...
+
     for i in range(1,66):
         url = f"https://moyareklama.by/Гомель/квартиры_продажа/все/8/{i}/"
         data = requests.get(url)

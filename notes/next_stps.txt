@@ -1,5 +1,6 @@
 1. parse other flats data
-2. get count of pages pagination
 3. sort commerce
-4. create pattern
-style="background:url(https://media1.moyareklama.by/i/p/148x111/202111/20211101163112_a1cb38a27e8f681201db466d338853f6.jpg) no-repeat 50% 50% #f5f5f5; background-size: contain"
+4. make auto parse with plawright
+5. make integration with telegram api
+
+

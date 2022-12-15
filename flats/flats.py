@@ -12,18 +12,22 @@ def get_appartments():
     app_arr = []
     app_dict = {}
 
+    posts_ids = []
+
     # headers = {"user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"}
 
-    main_url = 'https://www.moyareklama.by'
+    main_url = 'https://www.moyareklama.by/Гомель/квартиры_продажа/'
 
-    # if file flats.json exist
-        # open file
-        # go through all ids
-        # compare if exist id in list app_arr
-        # add to app_arr
-    # else do ...
+    req = requests.get(main_url)
+    soup = BeautifulSoup(req.text, 'lxml')
+    pages = soup.find_all('li', class_='page-item')
+    last = pages[-2].text
+    last = int(last)
 
-    for i in range(1,66):
+    items_count = soup.find('div', class_="current").text
+    print(f"{items_count}страниц: {last}")
+
+    for i in range(1, 2):
         url = f"https://moyareklama.by/Гомель/квартиры_продажа/все/8/{i}/"
         data = requests.get(url)
         print(url)
@@ -41,19 +45,6 @@ def get_appartments():
             link = main_url + item.find('div', class_="title").find('a').get('href')
             data = requests.get(link)
             soup = BeautifulSoup(data.text, 'lxml')
-            try:
-                items = soup.find('div', class_='slider')
-                if items != None:
-                    images = items.find_all('div', class_='photo_preview')
-                    for image in images:
-                        image = image.get('style')
-                        image = image.replace("background:url(", '').replace(') no-repeat 50% 50% #f5f5f5; background-size: contain', '')
-                        print(image)
-                else:
-                    images = 'None'
-            except:
-                continue
-
             title = item.find('div', class_="title").text
            
             # rooms
@@ -96,12 +87,12 @@ def get_appartments():
                 continue
         
             company_name = item.find('div', class_="company").text
+
             
-            app_dict ={
+            app_dict = {
                     'number': num,
                     'id': item_id,
                     'link': link,
-                    'images': images,
                     'title': title.strip(),
                     'area': area,
                     'rooms': rooms,
@@ -109,17 +100,50 @@ def get_appartments():
                     'price': price.strip(),
                     'company_link': company_link,
                     'company_name': company_name.strip(),
-                    # 'count': counter(count)
             }
 
             # app_arr.append([link, item_id, title, address, price, company_name, company_link])
             app_arr.append(app_dict)
+            posts_ids.append(item_id)
 
         print(len(app_arr))
+    # print(posts_ids)
 
-    with open(f'files/json/flats.json', 'w', encoding='utf-8') as f:
-            json.dump(app_arr, f, ensure_ascii = False, indent =4, sort_keys=False)
+    # Every time rewrite all flats posts
+    with open('files/json/flats.json', 'w', encoding='utf-8') as f:
+        json.dump(app_arr, f, ensure_ascii = False, indent =4, sort_keys=False)
 
+    # Creates only if does not exist
+    if not os.path.exists('flats/flats_ids.txt'):
+        print("File with flats ids is not exists! Create this FILE!!!")
+
+        with open('flats/flats_ids.txt', 'w') as f:
+            for item in posts_ids:
+                f.write(str(item) + "\n")
+    else:
+        new_arr = []
+        old_arr =[]
+        # Grab all old ids
+        with open('files/json/flats.json', 'r', encoding='utf-8') as f:
+            flats = f.read()
+        new_flats = json.loads(flats)
+        # print(flats[0])
+        # For old ids in old list
+        for new_flat in new_flats:
+            # print(flat['id'])
+            new_flat_id = new_flat['id']
+            new_arr.append(new_flat_id)
+        # this the same is posts array
+        for old in posts_ids:
+            old_arr.append(old)
+
+        
+                
+        
+
+     
+                   
+    # print(new_arr)
     print("JSON File write!")
 
     df = pd.read_json('files/json/flats.json')

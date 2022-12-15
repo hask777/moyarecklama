@@ -27,7 +27,7 @@ def get_appartments():
     items_count = soup.find('div', class_="current").text
     print(f"{items_count}страниц: {last}")
 
-    for i in range(1, 2):
+    for i in range(1, last + 1):
         url = f"https://moyareklama.by/Гомель/квартиры_продажа/все/8/{i}/"
         data = requests.get(url)
         print(url)
@@ -121,28 +121,20 @@ def get_appartments():
             for item in posts_ids:
                 f.write(str(item) + "\n")
     else:
-        new_arr = []
-        old_arr =[]
         # Grab all old ids
         with open('files/json/flats.json', 'r', encoding='utf-8') as f:
-            flats = f.read()
-        new_flats = json.loads(flats)
-        # print(flats[0])
+            # flats = f.read()
+            new_flats = json.loads(f.read())
+
+        with open('flats/flats_ids.txt', 'r', encoding='utf-8') as f:
+            flats_ids = f.read()
         # For old ids in old list
         for new_flat in new_flats:
-            # print(flat['id'])
-            new_flat_id = new_flat['id']
-            new_arr.append(new_flat_id)
-        # this the same is posts array
-        for old in posts_ids:
-            old_arr.append(old)
-
+            if new_flat['id'] not in flats_ids:
+                print(f'new flat: {new_flat["id"]}')
+            else:
+                print(f'no new: {new_flat["id"]}')
         
-                
-        
-
-     
-                   
     # print(new_arr)
     print("JSON File write!")
 

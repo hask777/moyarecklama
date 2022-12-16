@@ -6,24 +6,22 @@ import json
 import pandas as pd
 import os.path
 import time
+import datetime
 from tqdm import tqdm
 
 def get_appartments():
 
+    # current_date = datetime.datetime.now().strftime('%d_%m_%Y')
+
     app_arr = []
     app_dict = {}
-
     posts_ids = []
-
-    # headers = {"user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"}
+    today = []
 
     main_url = 'https://www.moyareklama.by/Гомель/квартиры_продажа/'
 
     req = requests.get(main_url)
     soup = BeautifulSoup(req.text, 'lxml')
-    # pages = soup.find_all('li', class_='page-item')
-    # last = pages[-2].text
-    # last = int(last)
 
     pages = int(soup.find_all('li', class_='page-item')[-2].text)
 
@@ -36,10 +34,8 @@ def get_appartments():
         print(url)
 
         soup = BeautifulSoup(data.text, 'lxml')
-        # print(soup.prettify)
-
         items = soup.find_all('div', class_="one_advert_list")
-        # print(len(items))
+
         num = 0
              
         for item in items:
@@ -108,10 +104,9 @@ def get_appartments():
                     'price': price.strip(),
                     'company_link': company_link,
                     'company_name': company_name.strip(),
-                    'date': date
+                    'date': date.strip()
             }
 
-            # app_arr.append([link, item_id, title, address, price, company_name, company_link])
             app_arr.append(app_dict)
             posts_ids.append(item_id)
 
@@ -119,43 +114,42 @@ def get_appartments():
     # print(posts_ids)
 
     # Every time rewrite all flats posts
-    with open('flats/files/json/flats.json', 'w', encoding='utf-8') as f:
+    with open(f'flats/files/json/flats.json', 'w', encoding='utf-8') as f:
         json.dump(app_arr, f, ensure_ascii = False, indent =4, sort_keys=False)
 
+
+
     # Creates only if does not exist
-    if not os.path.exists('flats/files/txt/flats_ids.txt'):
+    if not os.path.exists(f'flats/files/json/flats_ids.json'):
         print("File with flats ids is not exists! Create this FILE!!!")
 
-        with open('flats/files/txt/flats_ids.txt', 'w') as f:
-            for item in posts_ids:
-                f.write(str(item) + "\n")
+        with open(f'flats/files/json/flats_ids.json', 'w') as f:          
+            json.dump(posts_ids, f, ensure_ascii = False, indent =4, sort_keys=False)
+
     else:
+
         # Grab all old ids
-        with open('flats/files/json/flats.json', 'r', encoding='utf-8') as f:
-            # flats = f.read()
+        with open(f'flats/files/json/flats.json', 'r', encoding='utf-8') as f:
             new_flats = json.loads(f.read())
+            # for new_flat in new_flats:
+                # print(new_flat['id'])
 
-        with open('flats/files/txt/flats_ids.txt', 'r', encoding='utf-8') as f:
-            flats_ids = f.read()
+        with open(f'flats/files/json/flats_ids.json', 'r', encoding='utf-8') as f:
+            flats_ids = json.loads(f.read())
+            # for flat_id in flats_ids:
+                # print(flat_id)
 
-        # For old ids in old list
         for new_flat in new_flats:
             if new_flat['id'] not in flats_ids:
-
-                print(f'new flat: {new_flat["id"]}')
-                
-                posts_ids.append(f'{new_flat["id"]} new')
-
-                with open('flats/files/txt/flats_ids.txt', 'w') as f:
-                    for item in posts_ids:
-                        f.write(str(item) + "\n")
-            # else:
-            #     print(f'no new: {new_flat["id"]}')
-        
-    # print(new_arr)
+                print(new_flat['id'])
+                with open('flats/files/json/new-flats.json',  'w') as f:
+                    f.write(new_flat['id'])
+            else:
+                print("No New")
+     
     print("JSON File write!")
 
-    df = pd.read_json('flats/files/json/flats.json')
+    df = pd.read_json(f'flats/files/json/flats.json')
     df.to_csv('flats/files/csv/flats.csv')
 
     print('CSV File write!')

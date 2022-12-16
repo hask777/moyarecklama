@@ -6,6 +6,7 @@ import json
 import pandas as pd
 import os.path
 import time
+from tqdm import tqdm
 
 def get_appartments():
 
@@ -20,14 +21,16 @@ def get_appartments():
 
     req = requests.get(main_url)
     soup = BeautifulSoup(req.text, 'lxml')
-    pages = soup.find_all('li', class_='page-item')
-    last = pages[-2].text
-    last = int(last)
+    # pages = soup.find_all('li', class_='page-item')
+    # last = pages[-2].text
+    # last = int(last)
+
+    pages = int(soup.find_all('li', class_='page-item')[-2].text)
 
     items_count = soup.find('div', class_="current").text
-    print(f"{items_count}страниц: {last}")
+    print(f"{items_count}страниц: {pages}")
 
-    for i in range(1, last + 1):
+    for i in tqdm(range(1, pages + 1)):
         url = f"https://moyareklama.by/Гомель/квартиры_продажа/все/8/{i}/"
         data = requests.get(url)
         print(url)
@@ -46,23 +49,24 @@ def get_appartments():
             data = requests.get(link)
             soup = BeautifulSoup(data.text, 'lxml')
             title = item.find('div', class_="title").text
-           
             # rooms
-            if '1-ком' in title:
-                rooms = 1
-            if '2-ком' in title:
-                rooms = 2
-            if '3-ком' in title:
-                rooms = 3
-            if '4-ком' in title:
-                rooms = 4
-            if '5-ком' in title:
-                rooms = 5
-            if '6-ком' in title:
-                rooms = 6
-
+            try:       
+                if '1-ком' in title:
+                    rooms = 1
+                if '2-ком' in title:
+                    rooms = 2
+                if '3-ком' in title:
+                    rooms = 3
+                if '4-ком' in title:
+                    rooms = 4
+                if '5-ком' in title:
+                    rooms = 5
+                if '6-ком' in title:
+                    rooms = 6
+            except:
+                rooms = None
+            # Address
             address = item.find('div', class_="address").text
-
              # area
             if 'Железнодорожный' in address:
                 area = 'Железнодорожный'
@@ -74,9 +78,9 @@ def get_appartments():
                 area = 'Новобелицкий'
             if 'Гомельский' in address:
                 area = 'Гомельский'
-
-            price = item.find('div', class_="price_block").text
-
+            # Price 
+            price = item.find('div', class_="price_block").text   
+            # ompany link
             try:
                 company_link = item.find('a', class_="realty_link")
                 if company_link:
@@ -85,10 +89,14 @@ def get_appartments():
                     company_link = "None"
             except:
                 continue
-        
-            company_name = item.find('div', class_="company").text
+            # Company name
+            try:
+                company_name = item.find('div', class_="company").text
+            except:
+                company_name = None
+            # date
+            date = item.find('div', class_='date').text
 
-            
             app_dict = {
                     'number': num,
                     'id': item_id,
@@ -100,6 +108,7 @@ def get_appartments():
                     'price': price.strip(),
                     'company_link': company_link,
                     'company_name': company_name.strip(),
+                    'date': date
             }
 
             # app_arr.append([link, item_id, title, address, price, company_name, company_link])
@@ -110,40 +119,45 @@ def get_appartments():
     # print(posts_ids)
 
     # Every time rewrite all flats posts
-    with open('files/json/flats.json', 'w', encoding='utf-8') as f:
+    with open('flats/files/json/flats.json', 'w', encoding='utf-8') as f:
         json.dump(app_arr, f, ensure_ascii = False, indent =4, sort_keys=False)
 
     # Creates only if does not exist
-    if not os.path.exists('flats/flats_ids.txt'):
+    if not os.path.exists('flats/files/txt/flats_ids.txt'):
         print("File with flats ids is not exists! Create this FILE!!!")
 
-        with open('flats/flats_ids.txt', 'w') as f:
+        with open('flats/files/txt/flats_ids.txt', 'w') as f:
             for item in posts_ids:
                 f.write(str(item) + "\n")
     else:
         # Grab all old ids
-        with open('files/json/flats.json', 'r', encoding='utf-8') as f:
+        with open('flats/files/json/flats.json', 'r', encoding='utf-8') as f:
             # flats = f.read()
             new_flats = json.loads(f.read())
 
-        with open('flats/flats_ids.txt', 'r', encoding='utf-8') as f:
+        with open('flats/files/txt/flats_ids.txt', 'r', encoding='utf-8') as f:
             flats_ids = f.read()
+
         # For old ids in old list
         for new_flat in new_flats:
             if new_flat['id'] not in flats_ids:
+
                 print(f'new flat: {new_flat["id"]}')
-            else:
-                print(f'no new: {new_flat["id"]}')
+                
+                posts_ids.append(f'{new_flat["id"]} new')
+
+                with open('flats/files/txt/flats_ids.txt', 'w') as f:
+                    for item in posts_ids:
+                        f.write(str(item) + "\n")
+            # else:
+            #     print(f'no new: {new_flat["id"]}')
         
     # print(new_arr)
     print("JSON File write!")
 
-    df = pd.read_json('files/json/flats.json')
-    df.to_csv('files/csv/flats.csv')
+    df = pd.read_json('flats/files/json/flats.json')
+    df.to_csv('flats/files/csv/flats.csv')
 
     print('CSV File write!')
-
-    # df = pd.DataFrame(app_arr)
-    # df.to_csv('files/csv/flats.csv')
        
 get_appartments()         

@@ -16,7 +16,7 @@ def get_appartments():
     app_arr = []
     app_dict = {}
     posts_ids = []
-    today = []
+    new_flats_list = []
 
     main_url = 'https://www.moyareklama.by/Гомель/квартиры_продажа/'
 
@@ -29,7 +29,7 @@ def get_appartments():
     print(f"{items_count}страниц: {pages}")
 
     for i in tqdm(range(1, pages + 1)):
-        url = f"https://moyareklama.by/Гомель/квартиры_продажа/все/8/{i}/"
+        url = f"https://moyareklama.by/Гомель/квартиры_продажа/все/8/{i}"
         data = requests.get(url)
         print(url)
 
@@ -140,12 +140,14 @@ def get_appartments():
                 # print(flat_id)
 
         for new_flat in new_flats:
-            if new_flat['id'] not in flats_ids:
-                print(new_flat['id'])
-                with open('flats/files/json/new-flats.json',  'w') as f:
-                    f.write(new_flat['id'])
-            else:
-                print("No New")
+            try:
+                if new_flat['id'] not in flats_ids:
+                    print(new_flat['id'])
+                    new_flats_list.append(new_flat['id'])
+                    with open('flats/files/json/new_flats.json',  'w') as f:
+                        json.dump(new_flats_list, f, ensure_ascii = False, indent =4, sort_keys=False)
+            except:
+                continue
      
     print("JSON File write!")
 

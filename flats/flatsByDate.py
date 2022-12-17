@@ -29,7 +29,7 @@ def get_appartments():
     items_count = soup.find('div', class_="current").text
     print(f"{items_count}страниц: {pages}")
 
-    for i in tqdm(range(1, pages + 1)):
+    for i in tqdm(range(1, 3)):
         url = f"https://moyareklama.by/Гомель/квартиры_продажа/все/8/{i}"
         data = requests.get(url)
         print(url)
@@ -94,6 +94,7 @@ def get_appartments():
                 company_name = None
             # date
             date = item.find('div', class_='date').text
+            date = date.strip()
 
             app_dict = {
                     'number': num,
@@ -106,13 +107,14 @@ def get_appartments():
                     'price': price.strip(),
                     'company_link': company_link,
                     'company_name': company_name.strip(),
-                    'date': date.strip()
+                    'date': date
             }
 
             # app_arr.append(current_date)
             app_arr.append(app_dict)
             # posts_ids.append(current_date)
-            posts_ids.append(item_id)
+            posts_ids.append(date)
+            
 
         print(len(app_arr))
     # print(posts_ids)
@@ -126,10 +128,10 @@ def get_appartments():
     #     json.dump(app_arr, f, ensure_ascii = False, indent =4, sort_keys=False)
 
     # Creates only if does not exist
-    if not os.path.exists(f'flats/files/json/flats_ids.json'):
+    if not os.path.exists(f'flats/files/json/flats_time.json'):
         print("File with flats ids is not exists! Create this FILE!!!")
 
-        with open(f'flats/files/json/flats_ids.json', 'w', encoding='utf-8') as f:          
+        with open(f'flats/files/json/flats_time.json', 'w', encoding='utf-8') as f:          
             json.dump(posts_ids, f, ensure_ascii = False, indent =4, sort_keys=False)
 
         # with open(f'flats/files/txt/flats_ids{current_date}.txt', 'w', encoding='utf-8') as f:          
@@ -137,31 +139,29 @@ def get_appartments():
 
     else:
 
-        # Grab all old ids
+        with open(f'flats/files/json/flats_time.json', 'w', encoding='utf-8') as f:          
+            json.dump(posts_ids, f, ensure_ascii = False, indent =4, sort_keys=False)
+
+         # Grab all old ids
         with open(f'flats/files/json/flats.json', 'r', encoding='utf-8') as f:
             new_flats = json.loads(f.read())
             # for new_flat in new_flats:
             #     print(new_flat['id'])
 
-        with open(f'flats/files/json/flats_ids.json', 'r', encoding='utf-8') as f:
-            flats_ids = json.loads(f.read())
+        with open(f'flats/files/json/flats_time.json', 'r', encoding='utf-8') as f:
+            flats_dates = json.loads(f.read())
+            # print(flats_dates)
             # for flat_id in flats_ids:
                 # print(flat_id)
 
         for new_flat in new_flats:
+            # print(new_flat['date'])
             
-            if new_flat['id'] not in flats_ids:
-                print(new_flat['id'])
-                new_flats_list.append(new_flat['id'])
+            if new_flat['date'] not in flats_dates:
+                print(new_flat['date'])
+                new_flats_list.append(new_flat['date'])
 
-        with open('flats/files/json/new_flats.json',  'w', encoding='utf-8') as f:
-            json.dump(new_flats_list, f, ensure_ascii = False, indent =4, sort_keys=False)           
-            
-         
-        # for new_flat in new_flats:
-        #     last_new_flats.append(new_flat['id'])
-        #     with open(f'flats/files/json/flats_ids.json', 'w', encoding='utf-8') as f:
-        #         json.dump(last_new_flats, f, ensure_ascii = False, indent =4, sort_keys=False)
+
      
     print("JSON File write!")
 

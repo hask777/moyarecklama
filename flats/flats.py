@@ -11,12 +11,13 @@ from tqdm import tqdm
 
 def get_appartments():
 
-    # current_date = datetime.datetime.now().strftime('%d_%m_%Y')
+    current_date = datetime.datetime.now().strftime('%d_%m_%Y_%H')
 
     app_arr = []
     app_dict = {}
     posts_ids = []
     new_flats_list = []
+    last_new_flats = [] 
 
     main_url = 'https://www.moyareklama.by/Гомель/квартиры_продажа/'
 
@@ -45,6 +46,7 @@ def get_appartments():
             data = requests.get(link)
             soup = BeautifulSoup(data.text, 'lxml')
             title = item.find('div', class_="title").text
+            title = title.strip()
             # rooms
             try:       
                 if '1-ком' in title:
@@ -97,7 +99,7 @@ def get_appartments():
                     'number': num,
                     'id': item_id,
                     'link': link,
-                    'title': title.strip(),
+                    'title': title,
                     'area': area,
                     'rooms': rooms,
                     'address': address,
@@ -107,24 +109,28 @@ def get_appartments():
                     'date': date.strip()
             }
 
+            # app_arr.append(current_date)
             app_arr.append(app_dict)
+            # posts_ids.append(current_date)
             posts_ids.append(item_id)
 
         print(len(app_arr))
     # print(posts_ids)
 
+    '''START wirte today data'''
     # Every time rewrite all flats posts
     with open(f'flats/files/json/flats.json', 'w', encoding='utf-8') as f:
         json.dump(app_arr, f, ensure_ascii = False, indent =4, sort_keys=False)
-
-
 
     # Creates only if does not exist
     if not os.path.exists(f'flats/files/json/flats_ids.json'):
         print("File with flats ids is not exists! Create this FILE!!!")
 
-        with open(f'flats/files/json/flats_ids.json', 'w') as f:          
+        with open(f'flats/files/json/flats_ids.json', 'w', encoding='utf-8') as f:          
             json.dump(posts_ids, f, ensure_ascii = False, indent =4, sort_keys=False)
+
+        # with open(f'flats/files/txt/flats_ids{current_date}.txt', 'w', encoding='utf-8') as f:          
+        #     f.write(str(posts_ids))
 
     else:
 
@@ -132,7 +138,7 @@ def get_appartments():
         with open(f'flats/files/json/flats.json', 'r', encoding='utf-8') as f:
             new_flats = json.loads(f.read())
             # for new_flat in new_flats:
-                # print(new_flat['id'])
+            #     print(new_flat['id'])
 
         with open(f'flats/files/json/flats_ids.json', 'r', encoding='utf-8') as f:
             flats_ids = json.loads(f.read())
@@ -140,14 +146,19 @@ def get_appartments():
                 # print(flat_id)
 
         for new_flat in new_flats:
-            try:
-                if new_flat['id'] not in flats_ids:
-                    print(new_flat['id'])
-                    new_flats_list.append(new_flat['id'])
-                    with open('flats/files/json/new_flats.json',  'w') as f:
-                        json.dump(new_flats_list, f, ensure_ascii = False, indent =4, sort_keys=False)
-            except:
-                continue
+            
+            if new_flat['id'] not in flats_ids:
+                print(new_flat['id'])
+                new_flats_list.append(new_flat['id'])
+
+        with open('flats/files/json/new_flats.json',  'w', encoding='utf-8') as f:
+            json.dump(new_flats_list, f, ensure_ascii = False, indent =4, sort_keys=False)           
+            
+         
+        # for new_flat in new_flats:
+        #     last_new_flats.append(new_flat['id'])
+        #     with open(f'flats/files/json/flats_ids.json', 'w', encoding='utf-8') as f:
+        #         json.dump(last_new_flats, f, ensure_ascii = False, indent =4, sort_keys=False)
      
     print("JSON File write!")
 

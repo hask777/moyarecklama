@@ -12,6 +12,9 @@ from tqdm import tqdm
 def get_appartments():
 
     current_date = datetime.datetime.now().strftime('%d_%m_%Y_%H')
+    # convert = datetime.strptime(date_string, format)
+    # datetime_str = '09/19/22 13:55:26'
+    # datetime_object = datetime.strptime(datetime_str, '%m/%d/%y %H:%M:%S')
 
     app_arr = []
     app_dict = {}
@@ -158,10 +161,10 @@ def get_appartments():
             json.dump(new_flats_list, f, ensure_ascii = False, indent =4, sort_keys=False)           
             
          
-        # for new_flat in new_flats:
-        #     last_new_flats.append(new_flat['id'])
-        #     with open(f'flats/files/json/flats_ids.json', 'w', encoding='utf-8') as f:
-        #         json.dump(last_new_flats, f, ensure_ascii = False, indent =4, sort_keys=False)
+        for new_flat in new_flats:
+            last_new_flats.append(new_flat['id'])
+            with open(f'flats/files/json/flats_ids.json', 'w', encoding='utf-8') as f:
+                json.dump(last_new_flats, f, ensure_ascii = False, indent =4, sort_keys=False)
      
     print("JSON File write!")
 

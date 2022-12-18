@@ -161,6 +161,9 @@ def get_appartments():
                 print(new_flat['date'])
                 new_flats_list.append(new_flat['date'])
 
+        with open(f'flats/files/json/flats_time.json', 'w', encoding='utf-8') as f:          
+            json.dump(new_flats_list, f, ensure_ascii = False, indent =4, sort_keys=False)
+
 
      
     print("JSON File write!")

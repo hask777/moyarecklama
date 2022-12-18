@@ -140,28 +140,21 @@ def get_appartments():
         #     f.write(str(posts_ids))
 
     else:
-
-        # Grab all old ids
+        
         with open(f'flats/files/json/flats.json', 'r', encoding='utf-8') as f:
             new_flats = json.loads(f.read())
-            # for new_flat in new_flats:
-            #     print(new_flat['id'])
 
         with open(f'flats/files/json/flats_ids.json', 'r', encoding='utf-8') as f:
             flats_ids = json.loads(f.read())
-            # for flat_id in flats_ids:
-                # print(flat_id)
 
-        for new_flat in new_flats:
-            
+        for new_flat in new_flats:       
             if new_flat['id'] not in flats_ids:
                 print(new_flat['id'])
                 new_flats_list.append(new_flat['id'])
 
         with open('flats/files/json/new_flats.json',  'w', encoding='utf-8') as f:
             json.dump(new_flats_list, f, ensure_ascii = False, indent =4, sort_keys=False)           
-            
-         
+                    
         for new_flat in new_flats:
             last_new_flats.append(new_flat['id'])
             with open(f'flats/files/json/flats_ids.json', 'w', encoding='utf-8') as f:

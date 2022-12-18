@@ -9,6 +9,8 @@ bs4 = "*"
 lxml = "*"
 pandas = "*"
 tqdm = "*"
+fastapi = "*"
+uvicorn = "*"
 
 [dev-packages]
 

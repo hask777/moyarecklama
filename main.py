@@ -6,15 +6,13 @@ import json
 import pandas as pd
 import os.path
 import time
+from fastapi import FastAPI
 
-# functions
-from flats.flats import get_appartments
-from houses.houses import get_houses
+app = FastAPI()
 
-if __name__ == '__main__':
-    while True:
 
-        get_appartments()
-        get_houses()
-        
-        time.sleep(10)
+@app.get("/")
+async def root():
+    with open('flats/telegram/files/json/api_new_flats.json', 'r', encoding='utf-8') as f:
+        new_flats = json.loads(f.read())
+    return {'flats': new_flats}

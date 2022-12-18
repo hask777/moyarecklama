@@ -11,7 +11,8 @@ from tqdm import tqdm
 
 def get_appartments():
 
-    current_date = datetime.datetime.now().strftime('%d_%m_%Y_%H')
+    current_date = datetime.datetime.now().strftime('%d_%m_%Y')
+    print(current_date)
     # convert = datetime.strptime(date_string, format)
     # datetime_str = '09/19/22 13:55:26'
     # datetime_object = datetime.strptime(datetime_str, '%m/%d/%y %H:%M:%S')

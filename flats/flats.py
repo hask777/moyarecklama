@@ -27,9 +27,7 @@ def get_appartments():
 
     req = requests.get(main_url)
     soup = BeautifulSoup(req.text, 'lxml')
-
     pages = int(soup.find_all('li', class_='page-item')[-2].text)
-
     items_count = soup.find('div', class_="current").text
     print(f"{items_count}страниц: {pages}")
 

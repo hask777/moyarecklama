@@ -12,6 +12,7 @@ tqdm = "*"
 fastapi = "*"
 uvicorn = "*"
 aiogram = "*"
+aiohttp = "*"
 
 [dev-packages]
 
